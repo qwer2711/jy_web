@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BALENCIAGA REDESIGN</title>
+       <!-- 모바일에서 화면배율을 디바이스 크기 기준으로 설정 -->
+<!-- 이게 안되면 pc에서의 100px과 모바일에서의 100px이 디바이스 성능에 따라 달라집니다. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<!-- owl 캐러셀 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+ 
+
+<div class="header">
+    <div class="header-box-1 row con">
+        <div class="logo">
+            <a href="">
+            <img src="./img/Balenciaga_Logo.svg.png" alt="">
+        </a>
+        </div>
+        <div class="header-menu-text con">
+            <ul class="left-menu cell">
+                <li class=""><a href="#">한국어/한국어 <i class="fas fa-angle-down down"></i><i class="fas fa-angle-up up"></i></a>
+                <ul class="">
+                    <li><a href="#">한국/한국어</a></li>
+                    <li><a href="#">International/English</a></li>
+                    <li><a href="#">中国大陆/中文</a></li>
+                    <li><a href="">中國香港/繁體中文</a></li>
+                    <li><a href="#">Hong Kong(China)/English</a></li>
+                    <li><a href="#">Singapore/English</a></li>
+                    <li><a href="#">Malaysia/English</a></li>
+                    <li><a href="#">FRANCE/FRANCAIS</a></li>
+                    <li><a href="#">Indonesia/Bahasa Indonesia</a></li>
+                    <li><a href="#">ประเทศไทย/ไทย</a></li>          
+                </ul>  
+                </li>
+            </ul>
+            <ul class="right-menu cell-right">
+                <li><a href="#">매창찾기</a></li>
+                <li><span class="right-side-bar"></span></li>
+                <li><a href="#">장바구니</a></li>
+                <li><span class="right-side-bar"></span></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-menu con">
+        <ul class="menu-box-1 row">
+            <li class="cell">
+               <a href="">ABOUT US</a>
+            </li>
+            <li class="cell">
+                <a href="#">MEN</a>
+                    <ul>
+                        <li><a href="#">NEW ARRIVALS</a></li>
+                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="#">BAGS</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">ACCESSORIES</a></li>
+                        <li><a href="#">KIDS</a></li>
+                    </ul>
+            </li>
+            <li class="cell">
+                <a href="">WOMEN</a>
+                    <ul>
+                      <li><a href="#">NEW ARRIVALS</a></li>
+                      <li><a href="#">CLOTHING</a></li>
+                      <li><a href="#">BAGS</a></li>
+                      <li><a href="#">SHOES</a></li>
+                      <li><a href="#">ACCESSORIES</a></li>
+                      <li><a href="#">KIDS</a></li>
+                    </ul>
+            </li>
+            <li class="cell">
+                <a href="#">COLLECTION</a>
+                    <ul>
+                        <li><a href="#">F/W 2020</a></li>
+                        <li><a href="#">S/S 2019</a></li>
+                        <li><a href="#">F/W 2018</a></li>
+                        <li><a href="#">S/S 2017</a></li>
+                        <li><a href="#">F/W 2017</a></li>
+                 
+                    </ul>
+            </li>
+            <li class="cell">
+                <a href="">COMUNITY</a>
+                    <ul>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">REVIEW</a></li>
+                        <li><a href="#">LOOKBOOK</a></li>
+                     
+                    </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="mobile-wrap">
+   <div class="mobile-header relative">
+       <a class="logo-1 absolute-left absolute-middle img-box block" href="#"><img src="./img/Balenciaga_Logo.svg.png" alt=""></a>
+       <a class="logo-2 absolute-right absolute-middle img-box block" href="#"><img src="./img/header-mb.png" alt=""></a>
+    </div>
+    
+   <div class="mobile-side-menu">
+       <div class="side-box">
+           <div class="top-menu">
+               <a class="top-img img-box block" href="#"><img src="./img/Balenciaga_Logo.svg.png" alt=""></a>
+               <div class="language">
+                   <a class="active" href="#">KOR</a>
+                   <span></span>
+                   <a href="#">ENG</a>
+               </div>
+           </div>
+           <ul class="main-menu">
+               <li class="">
+                   <a href="#">
+                       ABOUT US <i class="fas fa-chevron-down icon-down cell-right"></i>
+                               <i class="icon-up fas fa-chevron-up cell-right"></i></a>  
+                   
+               </li>
+               <li>
+                   <a href="#">
+                       MEN<i class="fas fa-chevron-down icon-down cell-right"></i><i class="icon-up fas fa-chevron-up cell-right"></i></a>
+                        <ul>
+                        <li><a href="#">NEW ARRIVALS</a></li>
+                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="#">BAGS</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">ACCESSORIES</a></li>
+                        <li><a href="#">KIDS</a></li>
+                    </ul>
+
+               </li>
+               <li>
+                   <a href="#">
+                       WOMEN<i class="fas fa-chevron-down icon-down cell-right"></i>
+                               <i class="icon-up fas fa-chevron-up cell-right"></i></a>
+                       <ul>
+                        <li><a href="#">NEW ARRIVALS</a></li>
+                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="#">BAGS</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">ACCESSORIES</a></li>
+                        <li><a href="#">KIDS</a></li>
+                    </ul>
+                   
+               </li>
+               <li>
+                   <a href="#">
+                       COLLECTION<i class="fas fa-chevron-down icon-down cell-right"></i>
+                               <i class="icon-up fas fa-chevron-up cell-right"></i></a>
+                       <ul>
+                        <li><a href="#">F/W 2020</a></li>
+                        <li><a href="#">S/S 2019</a></li>
+                        <li><a href="#">F/W 2018</a></li>
+                        <li><a href="#">S/S 2017</a></li>
+                        <li><a href="#">F/W 2017</a></li>
+                 
+                    </ul>
+                   
+               </li>
+               <li>
+                   <a href="#">
+                       COMMUNITY<i class="fas fa-chevron-down icon-down cell-right"></i>
+                               <i class="icon-up fas fa-chevron-up cell-right"></i></a>
+                       <ul>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">REVIEW</a></li>
+                        <li><a href="#">LOOKBOOK</a></li>
+                     
+                    </ul>
+                   
+               </li>
+               <li>
+                   <a class="img-box block relative" href="#">
+                      <img src="./img/mb-img.jpg" alt="">         
+               </li>
+               
+           </ul>  
+           <div class="close-icon img-box">
+               <a href="#"><img src="./img/close-Btn.png" alt=""></a>
+           </div>
+       </div>
+    </div>
+</div>
+
+<div class="main-box block img-box relative">
+    <img src="./img/main.jpg" alt="">
+    <div class="main-text text-align-center">
+        <div class="inline-block">
+        <div class="title"></div>
+        <div class="more block">SHOP NOW</div>
+        <div class="more block">ABOUT US</div>
+         </div>
+    </div>
+</div>
+<div class="main-box-mb block img-box relative">
+    <img src="./img/main.jpg" alt="">
+    <div class="main-text text-align-center">
+        <div class="inline-block">
+        <div class="title"></div>
+        <div class="more block">SHOP NOW</div>
+        <div class="more block">ABOUT US</div>
+         </div>
+    </div>
+</div>
+
+<div class="concept">
+    <div class="text">
+        <div class="cept">concept</div>
+        <div class="title">Restrained beauty</div>
+        <div class="content">Basically when you wear it.<br>
+it creates an attiude.</div>
+    </div>
+    <div class="fixed-img"></div>
+</div>
+
+<div class="img-menu">
+    <div class="title">MENU</div>
+    <div class="menu-box-0">
+    <div class="menu-box menu-box-1 row">
+        <li class="cell"><a class="img-box block" href="#"><img src="./img/img-menu-1.jpg" alt=""></a></li>
+        <li class="cell"><a class="img-box block" href="#"><img src="./img/img-menu-2.jpg" alt=""></a></li>
+        <li class="cell"><a class="img-box block" href="#"><img src="./img/img-menu-3.jpg" alt=""></a></li>
+      
+    </div>
+    <div class="menu-box menu-box-2 row">  
+        <li class="cell"><a class="img-box block" href="#"><img src="./img/img-menu-4.jpg" alt=""></a></li>
+        <li class="cell"><a class="img-box block" href="#"><img src="./img/img-menu-5.jpg" alt=""></a></li>
+    </div>
+  </div>
+</div>
+
+
+<div class="prod-box-1">
+    <div class="title text-align-center">
+        <span>NEW ARRIVAL</span>
+    </div>
+
+    <div class="menu-box-1 text-align-center line-height-0-ch-only">
+        <ul class="row inline-block">
+            <li class="cell active"><a href="#" onclick="return false;" class="block">MEN</a></li>
+            <li class="cell"><a href="#" onclick="return false;" class="block">WOMEN</a></li>
+        </ul>
+    </div>
+
+    <div class="my-carousel-box-1">
+        <div class="owl-carousel owl-theme">
+            <!--
+            .item[data-no="$"]*20>.img-box[style="background-image:url(https://www.sulwhasoo.com/kr/ko/layout/cont-main/recommend/best/__icsFiles/afieldfile/2019/12/27/best_img_01_pc.jpg);"]+h4{상품 $}
+            -->
+            <div class="item" data-no="1">
+                <a href="#">
+                <img src="./img/newproduct-1.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-1-1.JPG);"></div>
+                <h4>UNIFORM LARGE FIT HOODIE</h4>
+                </a>
+            </div>
+            <div class="item" data-no="2">
+                <a href="#">
+                <img src="./img/newproduct-2.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-2-1.JPG);"></div>
+                <h4>CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="3">
+                <a href="#">
+                <img src="./img/newproduct-3.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-3-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="4">
+                <a href="#">
+                <img src="./img/newproduct-4.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-4-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="5">
+                <a href="#">
+                <img src="./img/newproduct-5.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-5-1.JPG);"></div>
+                <h4>UNIFORM LARGE FIT HOODIE</h4>
+                </a>
+            </div>
+            <div class="item" data-no="6">
+                <a href="#">
+                <img src="./img/newproduct-6.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-6-1.JPG);"></div>
+                <h4>CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="7">
+                <a href="#">
+                <img src="./img/newproduct-7.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-7-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="8">
+                <a href="#">
+                <img src="./img/newproduct-8.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-8-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="9">
+                <a href="#">
+                <img src="./img/newproduct-9.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-9-1.JPG);"></div>
+                <h4>UNIFORM LARGE FIT HOODIE</h4>
+                </a>
+            </div>
+            <div class="item" data-no="10">
+                <a href="#">
+                <img src="./img/newproduct-10.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-10-1.JPG);"></div>
+                <h4>CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="11">
+                <a href="#">
+                <img src="./img/newproduct-11.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-11-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="12">
+                <a href="#">
+                <img src="./img/newproduct-12.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-12-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="13">
+                <a href="#">
+                <img src="./img/newproduct-13.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-13-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="14">
+                <a href="#">
+                <img src="./img/newproduct-14.jpg" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-14-1.jpg);"></div>
+                <h4>CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="15">
+                <a href="#">
+                <img src="./img/newproduct-15.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-15-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="16">
+                <a href="#">
+                <img src="./img/newproduct-16.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-16-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="17">
+                <a href="#">
+                <img src="./img/newproduct-17.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-17-1.JPG);"></div>
+                <h4>UNIFORM LARGE FIT HOODIE</h4>
+                </a>
+            </div>
+            <div class="item" data-no="18">
+                <a href="#">
+                <img src="./img/newproduct-18.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-18-1.JPG);"></div>
+                <h4>CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="19">
+                <a href="#">
+                <img src="./img/newproduct-19.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-19-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="20">
+                <a href="#">
+                <img src="./img/newproduct-20.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-20-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<div class="prod-box-1-mb">
+    <div class="title text-align-center">
+        <span>NEW ARRIVAL</span>
+    </div>
+
+    <div class="menu-box-1 text-align-center line-height-0-ch-only">
+        <ul class="row inline-block">
+            <li class="cell active"><a href="#" class="block">MEN</a></li>
+            <li class="cell"><a href="#" class="block">WOMEN</a></li>
+        </ul>
+    </div>
+
+    <div class="my-carousel-box-1">
+        <div class="owl-carousel owl-theme">
+            <!--
+            .item[data-no="$"]*20>.img-box[style="background-image:url(https://www.sulwhasoo.com/kr/ko/layout/cont-main/recommend/best/__icsFiles/afieldfile/2019/12/27/best_img_01_pc.jpg);"]+h4{상품 $}
+            -->
+            <div class="item" data-no="1">
+                <a href="#">
+                <img src="./img/newproduct-1.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-1-1.JPG);"></div>
+                <h4>UNIFORM LARGE FIT HOODIE</h4>
+                </a>
+            </div>
+            <div class="item" data-no="2">
+                <a href="#">
+                <img src="./img/newproduct-2.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-2-1.JPG);"></div>
+                <h4>CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="3">
+                <a href="#">
+                <img src="./img/newproduct-3.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-3-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="4">
+                <a href="#">
+                <img src="./img/newproduct-4.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-4-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="5">
+                <a href="#">
+                <img src="./img/newproduct-5.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-5-1.JPG);"></div>
+                <h4>UNIFORM LARGE FIT HOODIE</h4>
+                </a>
+            </div>
+            <div class="item" data-no="6">
+                <a href="#">
+                <img src="./img/newproduct-6.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-6-1.JPG);"></div>
+                <h4>CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="7">
+                <a href="#">
+                <img src="./img/newproduct-7.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-7-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="8">
+                <a href="#">
+                <img src="./img/newproduct-8.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-8-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="9">
+                <a href="#">
+                <img src="./img/newproduct-9.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-9-1.JPG);"></div>
+                <h4>UNIFORM LARGE FIT HOODIE</h4>
+                </a>
+            </div>
+            <div class="item" data-no="10">
+                <a href="#">
+                <img src="./img/newproduct-10.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-10-1.JPG);"></div>
+                <h4>CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="11">
+                <a href="#">
+                <img src="./img/newproduct-11.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-11-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="12">
+                <a href="#">
+                <img src="./img/newproduct-12.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-12-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="13">
+                <a href="#">
+                <img src="./img/newproduct-13.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-13-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="14">
+                <a href="#">
+                <img src="./img/newproduct-14.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-14-1.jpg);"></div>
+                <h4>CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="15">
+                <a href="#">
+                <img src="./img/newproduct-15.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-15-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="16">
+                <a href="#">
+                <img src="./img/newproduct-16.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-16-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="17">
+                <a href="#">
+                <img src="./img/newproduct-17.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-17-1.JPG);"></div>
+                <h4>UNIFORM LARGE FIT HOODIE</h4>
+                </a>
+            </div>
+            <div class="item" data-no="18">
+                <a href="#">
+                <img src="./img/newproduct-18.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-18-1.JPG);"></div>
+                <h4>CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="19">
+                <a href="#">
+                <img src="./img/newproduct-19.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-19-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+            <div class="item" data-no="20">
+                <a href="#">
+                <img src="./img/newproduct-20.JPG" alt="">
+                <div class="img-box cover" style="background-image:url(./img/newproduct-20-1.JPG);"></div>
+                <h4>JACQUARD LOGO CREWNECK</h4>
+                </a>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+<div class="fashion">
+    <a href="#">
+    <div class="fashion-box img-box">
+       <img src="./img/show.jpg" alt="">
+    </div>
+    <div class="text-box">
+        <span>balenciaga</span>
+        <p class="part-1">Spring / Summer 2020</p>
+        <p class="part-2">fashion show</p>
+        <p class="part-3">MORE</p>
+        </div>
+    </a>
+</div>
+<div class="fashion-mb">
+    <a href="#">
+    <div class="fashion-box img-box">
+       <img src="./img/show.jpg" alt="">
+    </div>
+    <div class="text-box">
+        <span>balenciaga</span>
+        <p class="part-1">Spring / Summer 2020</p>
+        <p class="part-2">fashion show</p>
+        <p class="part-3">MORE</p>
+        </div>
+    </a>
+</div>
+
+
+<div class="fixed">
+    <div class="text">
+        <div class="title-0">LOVE IS FOR EVERYONE</div>
+        <div class="title-1">BALENCIAGA</div>
+    </div>
+    <div class="fixed-img"></div>
+</div>
+
+<div class="insta-box-1">
+    <div class="insta-text text-align-center">
+        <span class="photo-title"></span>
+        <span class="photo-text"><a href=""><i class="fab fa-instagram"></i>
+BALENCIAGA INSTAGRAM</a></span>
+    </div>
+    
+    <div class="my-carousel-box-1">
+        <div class="owl-carousel owl-theme">
+          
+            <div class="item" data-no="1">
+                <div class="img-box" style="background-image:url(./img/insta1.PNG);"></div>
+            
+
+            </div>
+            <div class="item" data-no="2">
+                <div class="img-box" style="background-image:url(./img/insta2.PNG);"></div>
+              
+
+            </div>
+            <div class="item" data-no="3">
+                <div class="img-box" style="background-image:url(./img/insta3.PNG);"></div>
+      
+
+            </div>
+            <div class="item" data-no="4">
+                <div class="img-box" style="background-image:url(./img/insta4.PNG);"></div>
+              
+
+            </div>
+            <div class="item" data-no="5">
+                <div class="img-box" style="background-image:url(./img/insta5.PNG);"></div>
+             
+
+            </div>
+            <div class="item" data-no="6">
+                <div class="img-box" style="background-image:url(./img/insta6.PNG);"></div>
+                   </div>
+            <div class="item" data-no="7">
+                <div class="img-box" style="background-image:url(./img/insta7.PNG);"></div>
+           
+            </div>
+            <div class="item" data-no="8">
+                <div class="img-box" style="background-image:url(./img/insta8.PNG);"></div>
+            
+            </div>
+         
+        </div>
+    </div>
+</div>
+<div class="insta-box-1-mb">
+    <div class="insta-text text-align-center">
+        <span class="photo-title"></span>
+        <span class="photo-text"><a href=""><i class="fab fa-instagram"></i>
+BALENCIAGA INSTAGRAM</a></span>
+    </div>
+    
+    <div class="my-carousel-box-1">
+        <div class="owl-carousel owl-theme">
+            <!--
+            .item[data-no="$"]*20>.img-box[style="background-image:url(https://www.sulwhasoo.com/kr/ko/layout/cont-main/recommend/best/__icsFiles/afieldfile/2019/12/27/best_img_01_pc.jpg);"]+h4{상품 $}
+            -->
+            <div class="item" data-no="1">
+                <div class="img-box" style="background-image:url(./img/insta1.PNG);"></div>
+            
+
+            </div>
+            <div class="item" data-no="2">
+                <div class="img-box" style="background-image:url(./img/insta2.PNG);"></div>
+              
+
+            </div>
+            <div class="item" data-no="3">
+                <div class="img-box" style="background-image:url(./img/insta3.PNG);"></div>
+      
+
+            </div>
+            <div class="item" data-no="4">
+                <div class="img-box" style="background-image:url(./img/insta4.PNG);"></div>
+              
+
+            </div>
+            <div class="item" data-no="5">
+                <div class="img-box" style="background-image:url(./img/insta5.PNG);"></div>
+             
+
+            </div>
+            <div class="item" data-no="6">
+                <div class="img-box" style="background-image:url(./img/insta6.PNG);"></div>
+                   </div>
+            <div class="item" data-no="7">
+                <div class="img-box" style="background-image:url(./img/insta7.PNG);"></div>
+           
+            </div>
+            <div class="item" data-no="8">
+                <div class="img-box" style="background-image:url(./img/insta8.PNG);"></div>
+            
+            </div>
+         
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer-1">
+    <div class="footer-box">
+        <ul class="part row">
+            <li class="cell">
+                <p>STORE LOCATOR</p>
+                <ul class="part-2">
+                    <li><a href="#">Find a store nearby</a></li>
+                    <li><a href="#">SHOP IN</a></li>
+                    <li><a href="#">Language</a></li>
+                </ul>
+            </li>
+            <li class="cell">
+                <p>CLIENT SERVICE</p>
+                <ul class="part-2">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Follow your Order</a>
+                    <li><a href="#">Shipping</a>
+                    <li><a href="#">Payment</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="cell">
+                <p>THE COMPANY</p>
+                <ul class="part-2">
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy </a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Site map</a></li>
+                </ul>
+            </li>
+            <li class="cell">
+                <p>CONTACT US</p>
+                <ul class="part-2">
+                    <li><a href="#">CALL +1 646 889 1895</a></li> 
+                    <li><a href="#">Mon-Sat / 9am-9pm</a></li>
+                </ul>
+            </li>
+            <li class="cell">
+                <p>CONNECT</p>
+                 <ul class="part-2">
+                    <li><a href="#">facebook</a></li> 
+                    <li><a href="#">instagram</a></li>
+                     <li><a href="#">twitter</a></li>
+                </ul>
+            </li>
+            <li class="cell">
+                <p>NEWSLETTER</p>
+                <ul class="part-2">
+                    <li><a href="#">Email *<i class="fas fa-sort-down cell-right"></i></a></li>   
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="copyright">
+			<div class="container">
+				<p>Copyright ⓒ 2020 Balenciaga</p>
+			</div>
+		</div>
+</div>
+<div class="footer-mb">
+    <div class="footer-2">
+    <div class="footer-box">
+        <ul class="part">
+            <li class="#">
+                <a href="#">STORE LOCATOR</a>
+            </li>
+            <li class="#">
+                <a href="#">CLIENT SERVICE</a>
+            </li>
+            <li class="#">
+                <a href="#">THE COMPANY</a>
+            </li>
+            <li class="#">
+                <a href="#">CONTACT US</a>
+            </li>
+            <li class="#">
+                <a href="#">CONNECT</a>
+            </li>
+            <li class="#">
+                <a href="#"></a>
+                <a>NEWSLETTER</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="copyright">
+			<div class="container">
+				<p>Copyright ⓒ 2020 Balenciaga</p>
+			</div>
+		</div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

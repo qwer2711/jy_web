@@ -1,0 +1,185 @@
+/*  폰트 적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+    text-align:center;
+}
+
+body, ul, li, h1 {
+    margin-top:50px;
+    padding:0;
+    list-style:none;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+
+/* 노말라이즈 */
+body {
+    margin:0;
+    color:#686059;
+
+}
+
+/* 라이브러리 */
+.con {
+    margin:0 auto;
+}
+
+.img-box > img {
+    width:100%;
+    display:block;
+}
+
+.row::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.cell {
+    float:left;
+    box-sizing:border-box;
+}
+
+/* 커스텀 */
+
+.title{
+    margin-top:50px;
+    text-align:center;
+    font-size:3rem;
+    font-weight:500;
+    color:#686059;
+}
+
+.img .img-box{
+    width:180px;
+    display:inline-block;
+    margin-top:30px;
+    margin-bottom:30px;
+    box-shadow:5px 5px 10px 5px rgba(0,0,0,0.2);
+}
+
+.img span{
+    font-size:17px;
+    font-weight:500;
+    display:block;
+    margin-top:-10px;
+  }
+
+html, body {
+    overflow-x:hidden;
+}
+
+.con {
+    max-width:1100px;
+}
+
+.list-box-1{
+    margin-top:100px;
+    padding-bottom:100px;
+    border-top:2px solid #dfdfdf;
+
+}
+
+.list-box-1 .row {
+    margin:0 -10px;
+}
+
+.list-box-1 .cell {
+    margin-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    cursor:pointer;
+
+}
+
+@media ( min-width:931px ) {
+    .list-box-1 .cell {
+        width:calc(100% / 3);
+    }
+
+    .list-box-1 .cell:nth-child(3n + 1) {
+        clear:both;
+    }
+}
+
+
+@media ( max-width:800px ) and ( min-width:651px ) {
+    .list-box-1 .cell {
+        width:50%;
+    }
+    
+    .list-box-1 .cell:nth-child(2n + 1) {
+        clear:both;
+    }
+}
+
+
+@media ( max-width:400px ) {
+    .list-box-1 .cell {
+        width:100%;
+    }
+}
+
+
+.list-box-1 .cell a .prod-name {
+    margin-top:5px;
+    font-size:1.4rem;
+    text-align:center;
+    font-weight:bold;
+    font-size:1.2rem;
+    margin-top:10px;
+    color:black;
+}
+.list-box-1 .cell a .prod-title{
+   margin-top:5px;
+   font-size:1.4rem;
+   text-align:center;
+   font-weight:bold;
+   font-size:1.2rem;
+   margin-top:10px;
+   color:black;
+}
+
+.list-box-1 .cell:hover a .prod-title {
+    text-decoration:underline;
+    color:#439de6;
+}
+
+.list-box-1 .cell:hover a .prod-name {
+    color:#686059;
+}
+
+.list-box-1 .cell a .img-box {
+    overflow:hidden;
+}
+
+.list-box-1 .cell a .img-box > img {
+    transition: transform .5s;
+}
+
+.list-box-1 .cell:hover a .img-box > img {
+    transform: scale(1.2);
+}
+
+.list-box-1 .cell a .active {
+    text-align:center;
+    margin-top:10px;
+}
+
+.list-box-1 .cell a .active > span::after {
+    content:"반응형";
+    color:#439de6;
+    font-size:0.8rem;
+}
+
+.list-box-1 .cell a .active > span {
+    display:inline-block;
+    border:2px solid #a6cae7;
+    padding:0 5px;
+}

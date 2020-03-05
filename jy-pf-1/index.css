@@ -1,0 +1,1147 @@
+/*  폰트 적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+
+body {}
+
+body,
+ul,
+li,
+h1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.con {
+    margin: 0 auto;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.line-height-0-ch-only {
+    line-height: 0;
+}
+
+.line-height-0-ch-only > * {
+    line-height: normal;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.width-100p {
+    width: 100%;
+}
+
+.table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+/* 커스텀 */
+
+.con {
+    max-width: 1200px;
+}
+
+.con-min-width {
+    min-width: 320px;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+/*탑바메뉴 시작*/
+
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+    transition: height 0.3s;
+    background-color: #ffffff;
+    z-index: 200;
+}
+
+.top-bar::after {
+    content: "";
+    position: absolute;
+    top: 99px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.top-bar:hover {
+    height: 491px;
+}
+
+.top-bar .logo {
+    margin-top: 20px;
+    width: 147px;
+}
+
+.top-bar .menu-box-1 {
+    width: calc(100% - 206.44px);
+}
+
+.top-bar .menu-box-1 > ul > li {
+    width: 25%;
+}
+
+/* 1차 메뉴선택효과 시작 */
+.top-bar .menu-box-1 > ul > li > a {
+    position: relative;
+}
+
+.top-bar .menu-box-1 > ul > li > a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: -7px;
+    right: 50%;
+    background-color: #205696;
+    transition: width 0.5s;
+}
+
+.top-bar .menu-box-1 > ul > li > a::before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: #205696;
+    transition: width 0.5s;
+}
+
+.top-bar .menu-box-1 > ul > li:hover > a::after {
+    width: 49.5%;
+}
+
+.top-bar .menu-box-1 > ul > li:hover > a::before {
+    width: 49.5%;
+}
+
+/* 1차메뉴선택효과 끝 */
+
+.top-bar .menu-box-1 > ul > li > a {
+    text-align: center;
+    padding: 35px 0;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -1px;
+}
+
+.top-bar .menu-box-1 > ul > li:hover > a {
+    color: #205696;
+}
+
+.top-bar .menu-box-1 > ul > li > div > ul {
+    position: absolute;
+    top: 1.5px;
+    width: 100%;
+    height: 391px;
+    border-left: 1px solid #e8e8e8;
+}
+
+.top-bar .menu-box-1 > ul > li:last-child > div > ul {
+    border-right: 1px solid #e8e8e8;
+}
+
+
+.top-bar .menu-box-1 > ul > li > div > ul > li {
+    text-align: left;
+    margin-left: 30%;
+}
+
+.top-bar .menu-box-1 > ul > li > div > ul > li:first-child {
+    margin-top: 23px;
+}
+
+.top-bar .menu-box-1 > ul > li:nth-child(2) > div > ul > li {
+    margin-left: 95px;
+}
+
+.top-bar .menu-box-1 > ul > li:nth-child(3) > div > ul > li {
+    margin-left: 90px;
+}
+
+.top-bar .menu-box-1 > ul > li:nth-child(4) > div > ul > li {
+    margin-left: 80px;
+}
+
+.top-bar .menu-box-1 > ul > li > div > ul > li > a {
+    font-size: 16px;
+    padding: 6px 0;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+/* 2차메뉴클릭효과 시작*/
+.top-bar .menu-box-1 > ul > li > div > ul > li > a::after {
+    content: ".";
+    position: absolute;
+    top: 30%;
+    transform: translatey(-50%);
+    left: -13px;
+    font-size: 1.7rem;
+    color: #205696;
+    opacity: 0;
+    transform: translateX(-3px);
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.top-bar .menu-box-1 > ul > li > div > ul > li:hover > a::after {
+    transform: translateX(0) translatey(-50%);
+    opacity: 1;
+}
+
+/* 2차메뉴클릭효과 끝 */
+
+.top-bar .menu-box-1 > ul > li > div > ul > li:hover > a {
+    color: #205696;
+}
+
+.top-bar .menu-box-1 > ul > li > .menu-text {
+    position: absolute;
+    top: 125px;
+    left: 48%;
+    width: 250.08px;
+    height: 300px;
+    transform: translateX(-570px);
+    opacity: 0;
+    transform: opacity 5s;
+}
+
+.top-bar .menu-box-1 > ul > li:hover > .menu-text {
+    opacity: 1;
+}
+
+.top-bar .menu-box-1 > ul > li > .menu-text > .menu-title {
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #205696;
+    border-bottom: 2px solid #205696;
+}
+
+.top-bar .menu-box-1 > ul > li > .menu-text > .menu-title-text {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.22;
+    letter-spacing: -2px;
+    color: #222222;
+}
+
+.top-bar .menu-box-1 > ul > li > .menu-text a > img {
+    display: block;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: -30px;
+}
+
+.top-bar .menu-box-1 > ul > li:nth-child(3) > .menu-text a > img {
+    width: 80%;
+    height: 90px;
+    margin-top: 30px;
+}
+
+.top-bar .menu-box-1 > ul > li:nth-child(4) > .menu-text a > img {
+    margin-top: 10px;
+}
+
+/*탑바 메뉴 끝*/
+
+/* 그리드메뉴 시작*/
+
+
+.con {
+    width: 1200px;
+}
+
+.con-min-width {
+    min-width: 1200px;
+}
+
+.main-grid {
+    margin-top: 100px;
+}
+
+/* cell 너비*/
+
+
+.main-grid .row .cell {
+    width: 283px;
+}
+
+.main-grid > .row:first-child .cell:first-child,
+.main-grid > .row:nth-child(2) .cell:nth-child(2) {
+    width: calc(100% - 283px * 2);
+}
+
+/* row 높이*/
+
+.main-grid > .row:first-child .cell {
+    height: 592px;
+}
+
+.main-grid > .row:nth-child(2) .cell {
+    height: 376px;
+}
+
+.main-grid .row .cell > nav {
+    height: 100%;
+}
+
+.main-grid .row .cell .grid-item2 {
+    height: 50%;
+}
+
+.main-grid .row .cell .grid-item4 {
+    height: 50%;
+}
+
+.main-grid .row .cell nav > .grid-item-base {
+    height: 100%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/*이미지 텍스트 작업*/
+
+
+.main-grid .row div nav .grid-item-base .img-title-2 {
+    position: absolute;
+    top: 1.875rem;
+    left: 3.125rem;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+}
+
+.main-grid .row div nav .grid-item-base .img-text-2 {
+    position: absolute;
+    top: 4.875rem;
+    left: 2rem;
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: -2px;
+    color: #ffffff;
+}
+
+.main-grid .row div nav .grid-item-base .img-title-3 {
+    position: absolute;
+    top: 1.875rem;
+    left: 3.125rem;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+}
+
+.main-grid .row div nav .grid-item-base .img-text-3 {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.19;
+    letter-spacing: -2px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.main-grid .row div nav .grid-item-base .img-title-4 {
+    position: absolute;
+    top: 1.875rem;
+    left: 3.125rem;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+}
+
+.main-grid .row div nav .grid-item-base .img-text-4 {
+    position: absolute;
+    top: 4.875rem;
+    left: 2rem;
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: -2px;
+    color: #ffffff;
+}
+
+.main-grid .row div nav .grid-item-base .img-title-5 {
+    position: absolute;
+    top: 1.875rem;
+    left: 3.125rem;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #000000;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 3px;
+}
+
+.main-grid .row div nav .grid-item-base .img-text-5 {
+    position: absolute;
+    top: 4.875rem;
+    left: 2rem;
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.19;
+    letter-spacing: -2px;
+    color: #222222;
+}
+
+.main-grid .row div nav .grid-item-base .img-title-6 {
+    position: absolute;
+    top: 1.875rem;
+    left: 3.125rem;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+}
+
+.main-grid .row div nav .grid-item-base .img-text-6 {
+    position: absolute;
+    top: 4.875rem;
+    left: 3.125rem;
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.19;
+    letter-spacing: -2px;
+    color: #ffffff;
+}
+
+.main-grid .row div nav .grid-item-base .img-title-7 {
+    position: absolute;
+    top: 1.875rem;
+    left: 3.125rem;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+}
+
+.main-grid .row div nav .grid-item-base .img-text-7 {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-size: 1.8rem;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.19;
+    letter-spacing: -2px;
+    color: #ffffff;
+}
+
+/*이미지 텍스트 작업 끝*/
+
+/*호버이미지 배경깔기*/
+
+.main-grid .row .cell nav {
+    position: relative;
+}
+
+.main-grid .row .cell nav .grid-item-hover-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b1282c;
+}
+
+.main-grid .row .cell nav .grid-item-hover-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #df6599;
+}
+
+.main-grid .row .cell nav .grid-item-hover-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3e9dd2;
+}
+
+.main-grid .row .cell nav .grid-item-hover-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #199776;
+}
+
+.main-grid .row .cell nav .grid-item-hover-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d52a2c;
+}
+
+.main-grid .row .cell nav .grid-item-hover-6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7bb15a;
+}
+
+.main-grid .row .cell nav .grid-item-hover-7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #46b6af;
+}
+
+/*호버이미지배경 끝*/
+
+/*호버이미지 텍스트 시작*/
+
+.main-grid .row .cell nav .grid-item-hover {
+    text-align: center;
+}
+
+.main-grid .row .cell nav .grid-item-hover-1 .hover-title-1 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+    margin-top: 16%;
+}
+
+.main-grid .row .cell nav .grid-item-hover-1 .hover-text-1 {
+    display: block;
+    font-size: 2.875rem;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.24;
+    letter-spacing: -2px;
+    color: #ffffff;
+    margin-top: 1.563rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-1 img {
+    margin-top: 2.25rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-2 .hover-title-2 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+    margin-top: 1.875rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-2 .hover-text-2 {
+    display: block;
+    font-size: 1.875rem;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: -2px;
+    color: #ffffff;
+    margin-top: 1.563rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-2 img {
+    margin-top: 1.25rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-3 .hover-title-3 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+    margin-top: 65%;
+    margin-bottom: auto;
+}
+
+.main-grid .row .cell nav .grid-item-hover-3 .hover-text-3 {
+    display: block;
+    font-size: 1.875rem;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: -2px;
+    color: #ffffff;
+    margin-top: 1.563rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-3 img {
+    margin-top: 1.25rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-4 .hover-title-4 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+    margin-top: 1.875rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-4 .hover-text-4 {
+    display: block;
+    font-size: 1.875rem;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: -2px;
+    color: #ffffff;
+    margin-top: 1.563rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-4 img {
+    margin-top: 0.5rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-5 .hover-title-5 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+    margin-top: 1.875rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-5 .hover-text-5 {
+    display: block;
+    font-size: 1.875rem;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: -2px;
+    color: #ffffff;
+    margin-top: 1.563rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-5 img {
+    margin-top: 1.5rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-6 .hover-title-6 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+    margin-top: 1.875rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-6 .hover-text-6 {
+    display: block;
+    font-size: 1.875rem;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: -2px;
+    color: #ffffff;
+    margin-top: 1.563rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-6 img {
+    margin-top: 1.5rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-7 .hover-title-7 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+    margin-top: 1.875rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-7 .hover-text-7 {
+    display: block;
+    font-size: 1.875rem;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: -2px;
+    color: #ffffff;
+    margin-top: 1.563rem;
+}
+
+.main-grid .row .cell nav .grid-item-hover-7 img {
+    margin-top: 0.5rem;
+}
+
+/* 호버이미지 텍스트 끝 */
+
+
+
+.main-grid .row .cell nav .grid-item-hover > div {
+    opacity: 0;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.main-grid .row .cell nav:hover .grid-item-hover > div {
+    opacity: 1;
+    animation-name: size-up-down;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes size-up-down {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*슬라이더 시작*/
+
+.main-grid .row .cell .grid-item1 .grid-item-base .slider-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-grid .row .cell .grid-item1 .grid-item-base .slider-1 > .slides div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.main-grid .row .cell .grid-item1 .grid-item-base .slider-1 > .slides div.active {
+    opacity: 1;
+}
+
+.main-grid .row .cell .grid-item1 .grid-item-base .slider-1 > .slides .img-title-1 {
+    position: absolute;
+    top: 1.875rem;
+    left: 3.125rem;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+    z-index: 10;
+}
+
+.main-grid .row .cell .grid-item1 .grid-item-base .slider-1 > .slides .img-text-1 {
+    position: absolute;
+    top: 4.875rem;
+    left: 2.8rem;
+    font-size: 2.5rem;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: -2px;
+    color: #ffffff;
+}
+
+.main-grid .row .cell .grid-item1 .grid-item-base .slider-1 .pages {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 10%;
+    left: 10%;
+}
+
+.main-grid .row .cell .grid-item1 .grid-item-base .slider-1 .pages > li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color:rgba(0,0,0,0.2);
+    border-radius: 100%;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.main-grid .row .cell .grid-item1 .grid-item-base .slider-1 .pages > li.active {
+    background-color:#ffffff;
+}
+
+/*슬라이더 끝*/
+
+/* 그리드메뉴 끝*/
+
+
+/* 사이드메뉴 시작*/
+
+.side-menu-box {
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+
+.side-menu-box ul li:first-child {
+    border-top: solid 1px #dadada;
+}
+
+.side-menu-box ul li:last-child > a {
+    height: 40px;
+}
+
+.side-menu-box ul li > a {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-left: solid 1px #dadada;
+    border-bottom: solid 1px #dadada;
+    background-color: #ffffff;
+
+}
+
+
+.side-menu-box ul li > a > img {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.side-menu-box ul li:last-child > a > img {
+    top: 16px;
+}
+
+.side-menu-box ul li > a span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translatex(-50%)translatey(-50%);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* 그리드 작업 끝 */
+
+/*하단메뉴 시작*/
+
+section {
+    display: block;
+    padding: 60px 0;
+    background-color: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+section .row .footer-left {
+    padding-right: 60px;
+}
+
+
+section .row .footer-center {
+    padding-right: 60px;
+}
+
+section .row .footer-left .footer-left-text {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    color: #666666;
+    padding-top: 14px;
+}
+
+section .row .footer-left .footer-left-text .footer-bar {
+    display: inline-block;
+    width: 0;
+    height: 10px;
+    border-right: solid 1px #dddddd;
+    margin: 0 10px;
+}
+
+section .row .footer-center > a {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #222222;
+    margin-right: 3rem;
+}
+
+section .row .footer-center a:first-child {
+    color: #bd2414;
+}
+
+section .row .footer-center .footer-center-text-1 {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    color: #666666;
+    margin-top: 17px;
+}
+
+
+section .row .footer-center .footer-center-text-2 {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222222;
+    margin-top: 10px;
+}
+
+section .row .footer-right {
+    text-align: right;
+    vertical-align: top;
+}
+
+section .row .footer-right > a {
+    margin-right: 5px;
+}
+
+section .row .footer-right .footer-number {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    color: #666666;
+    margin-top: 17px;
+}
+
+section .row .footer-side-bar {
+    display: inline-block;
+    width: 0;
+    height: 103px;
+    border-right: solid 1px #dddddd;
+    margin-right: 50px;
+}
