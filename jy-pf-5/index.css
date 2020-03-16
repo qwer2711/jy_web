@@ -1153,15 +1153,19 @@ html, body {
 .mobile-side-menu .side-box .close-icon {
     display: inline-block;
     position: absolute;
-    top: -5px;
-    left: -38px;
+    top:50%;
+    left: -20%;
     background-color: black;
     padding: 13px 8px;
     opacity: .6;
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 .mobile-side-menu .side-box .close-icon img {
-    width: 22px;
+    width: 30px;
+    padding-left:5px;
 }
 
 
