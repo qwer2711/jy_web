@@ -767,7 +767,6 @@ html, body {
 }
 
 
-
 .fixed .fixed-img{
     background: url(./img/fixed2.jpg) center center no-repeat;
     background-size: cover;
@@ -1728,27 +1727,14 @@ html, body {
 
 @media ( max-width:600px ){
     .fixed .text .title-0{
-      white-space:nowrap;
+        white-space:nowrap;
     }
     .fixed .text .title-1{
-      font-size: 40px;
-
-}
+        font-size: 40px;
+    }
 }
 
 /*고정이미지2 반응형*/
-
-@media ( max-width:600px ){
-    .fixed .fixed-img{
-    background: url(./img/fixed2.jpg) center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width:100%;
-    height:400px;
-}
-    
-}
-
 
 
 
