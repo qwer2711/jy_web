@@ -770,8 +770,13 @@ html, body {
 .fixed .fixed-img{
     background: url(./img/fixed2.jpg) center center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     height:400px;
+}
+
+@media ( min-width: 1000px ) {
+    .fixed .fixed-img {
+        background-attachment: fixed;
+    }
 }
 
 /*인스타그램*/
