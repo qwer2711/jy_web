@@ -1234,14 +1234,6 @@ html, body {
 
 /*고정이미지1 반응형*/
 
-.concept .fixed-img{
-    background: url(./img/fixed1.png) center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height:400px;
-    width:100%;
-}
-
 /*메인메뉴*/
 
 .main-box-mb > img{
