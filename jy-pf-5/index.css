@@ -419,6 +419,8 @@ html, body {
     border:4px dashed rgba(255,255,255,0.8);
 }
 
+/*고정이미지1*/
+
 .concept{
     position:relative;
     width:100%;
@@ -456,7 +458,7 @@ html, body {
 .concept .fixed-img{
     background: url(./img/fixed1.png) center center no-repeat;
     background-size: cover;
-    height:400px;
+    height:600px;
 }
 
 @media ( min-width: 1000px ) {
@@ -465,10 +467,19 @@ html, body {
     }
 }
 
+@media ( max-width: 600px ) {
+    .concept .fixed-img{
+
+    height:400px;
+    }
+}
+
 /*사진메뉴*/
+
+
 .img-menu{
     position:relative;
-    width:85%;
+    width:70%;
     height:auto;
     top:0;
     left:50%;
@@ -478,9 +489,10 @@ html, body {
 
 .img-menu .title{
     text-align:center;
-    font-size: 27px;
+    font-size: 40px;
     color: #030200;
     margin-bottom:50px;
+    font-weight:500;
 }
 
 .img-menu .menu-box-0 .menu-box-1{
@@ -515,13 +527,12 @@ html, body {
     left:0;
     width:100%;
     height:100%;
-    transform:scale(1);
+
     background-color:rgba(0,0,0,0.4);
 }
 
 
 .img-menu .menu-box-0 .row .cell:hover > a{
-    transform:scale(1.04);
     transition:transform .5s;
     z-index:100;
 }
@@ -574,9 +585,6 @@ html, body {
 }
 
 
-
-
-/* .prod-box-1 시작 */
 .prod-box-1 > .menu-box-1{
     margin-bottom:50px;
 }
@@ -640,16 +648,19 @@ html, body {
     background:#000000;
 }
 
-/* .prod-box-1 끝 */
 
 .prod-box-1 > .title{
     padding-bottom:50px;
 }
 
 .prod-box-1 > .title > span{
-    font-size:27px;
+    font-size:40px;
+    font-weight:500;
     color:#030200;
 }
+
+/* .prod-box-1 끝 */
+
 
 /*패션쇼*/
 
@@ -770,13 +781,21 @@ html, body {
 .fixed .fixed-img{
     background: url(./img/fixed2.jpg) center center no-repeat;
     background-size: cover;
-    height:400px;
+    height:600px;
 }
 
 @media ( min-width: 1000px ) {
     .fixed .fixed-img {
         background-attachment: fixed;
     }
+}
+
+@media ( max-width: 600px ) {
+    .fixed .fixed-img{
+
+    height:300px;
+    }
+
 }
 
 /*인스타그램*/
@@ -1143,8 +1162,6 @@ html, body {
 }
 
 
-/*반응형*/
-
 /*하단메뉴*/
 .footer-mb{
     position:relative;
@@ -1236,12 +1253,16 @@ html, body {
     
  }
 
-/*고정이미지1 반응형*/
 
-/*메인메뉴*/
+/*메인메뉴 반응형*/
+
+.main-box-mb{
+    margin-left:-50%;
+}
 
 .main-box-mb > img{
     width:100%;
+    height:100%;
     background-repeat:no-repeat;
     background-position:center;
 }
@@ -1249,7 +1270,7 @@ html, body {
 .main-box-mb .main-text{
     position:absolute;
     top:50%;
-    left:50%;
+    left:65%;
     transform:translatex(-50%)translatey(-50%);
     color:white;
     font-size:2rem;
@@ -1328,9 +1349,135 @@ html, body {
      
     }
     
-
     
 }
+
+/* 사진메뉴 반응형 */
+
+.img-menu-mb{
+    position:relative;
+    width:100%;
+    height:auto;
+    top:0;
+    left:50%;
+    transform:translatex(-50%);
+    display:inline-block;
+}
+
+.img-menu-mb .title{
+    text-align:center;
+    font-size: 33px;
+    color: #030200;
+    margin-bottom:50px;
+    font-weight: 500;
+}
+
+.img-menu-mb .menu-box-0 .menu-box-1{
+    width:100%;
+    display:block;
+}
+
+.img-menu-mb .menu-box-0 .menu-box-1 > li:first-child{
+    width:50%;
+}
+.img-menu-mb .menu-box-0 .menu-box-1 > li{
+    width:25%;
+}
+
+.img-menu-mb .menu-box-0 .menu-box-2 > li{
+    width:50%;
+    height:30%;
+}
+
+.img-menu-mb .menu-box-0 .row .cell{
+    overflow:hidden;
+}
+
+.img-menu-mb .menu-box-0 .row .cell > a{
+    position:relative;
+}
+
+.img-menu-mb .menu-box-0 .row .cell:hover > a::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.4);
+}
+
+
+.img-menu-mb .menu-box-0 .row .cell:hover > a{
+    transition:transform .5s;
+    z-index:100;
+}
+
+
+@media ( min-width:1500px ) {
+    .img-menu-mb{
+        display:none;
+    }
+    
+ }
+
+@media ( max-width:1499px ) {
+    .img-menu{
+        display:none;
+    }
+    
+     .img-menu-mb{
+    position:relative;
+    width:100%;
+    height:auto;
+    top:0;
+    left:50%;
+    transform:translatex(-50%);
+    display:inline-block;
+}
+    
+    @media ( max-width:930px ){
+        
+         .img-menu-mb{
+    position:relative;
+    width:100%;
+    height:auto;
+    top:0;
+    left:50%;
+    transform:translatex(-50%);
+    display:inline-block;
+}
+       
+    }
+    
+      @media ( max-width:600px ){
+        
+     .img-menu-mb{
+        position:relative;
+        width:100%;
+        height:auto;
+        top:0;
+        left:50%;
+        transform:translatex(-50%);
+        display:inline-block;
+}
+          
+          .img-menu-mb .menu-box-0 .menu-box-1 > li:first-child{
+    width:100%;
+}
+          .img-menu-mb .menu-box-0 .menu-box-1 > li:nth-child(2){
+              width:50%;
+          }
+          
+          .img-menu-mb .menu-box-0 .menu-box-1 > li:nth-child(3){
+              width:50%;
+          }
+          
+           .img-menu-mb .menu-box-0 .menu-box-2 > li{
+              width:100%;
+          }   
+    }
+
 
 /*새상품반응형*/
 
@@ -1378,10 +1525,6 @@ html, body {
     right:20px;
 }
 
-
-
-
-/* .prod-box-1 시작 */
 .prod-box-1-mb > .menu-box-1 > ul > li > a {
     padding:10px 120px;
     border:2px solid #000000;
@@ -1448,11 +1591,11 @@ html, body {
 }
 
 .prod-box-1-mb > .title > span{
-    font-size:27px;
+    font-size:33px;
+    font-weight: 500;
     color:#030200;
 }
 
-/*반응형 새상품*/
 
 @media ( min-width:1050px ) {
     .prod-box-1-mb{
@@ -1582,8 +1725,6 @@ html, body {
     border:3px solid white;
 }
 
-/*반응형 패션쇼*/
-
 @media ( min-width:1060px ) {
     .fashion-mb{
         display:none;
@@ -1664,22 +1805,13 @@ html, body {
     
      .fashion-mb .text-box{
     position:absolute;
-    top:50%;
+    top:75%;
     left:40px;
     transform: translateY(-50%);
     z-index:100;
     color:white;
     }
     
-    .fashion-mb .text-box span{
-        display:none;
-
-}
-    
-    .fashion-mb .text-box .part-1{
-        display:none;
-
-}
 
 .fashion-mb .text-box .part-2{
     margin-top:40px; 
@@ -1705,6 +1837,16 @@ html, body {
  }
 
 @media ( max-width:400px ){
+    
+    .fashion-mb .text-box{
+    position:absolute;
+    top:90%;
+    left:40px;
+    transform: translateY(-50%);
+    z-index:100;
+    color:white;
+    }
+    
     .fashion-mb .text-box .part-2{
     margin-top:0px; 
     font-size:24px;
@@ -1739,9 +1881,6 @@ html, body {
     }
 }
 
-/*고정이미지2 반응형*/
-
-
 
 
 /*인스타 반응형*/
@@ -1752,7 +1891,7 @@ html, body {
     left:0;
     width:100%;
     background-color:#ffffff;
-    margin-top:150px;
+    margin-top:10px;
 }
 
 .insta-box-1-mb > .my-carousel-box-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .img-box {
@@ -1808,11 +1947,6 @@ html, body {
     left:auto;
 }
 
-
-
-/* .insta-box-1 끝 */
-
-/*상단텍스트시작*/
 
 .insta-box-1-mb > .insta-text .photo-text{
     font-size:20px;
