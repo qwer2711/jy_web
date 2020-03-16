@@ -456,8 +456,13 @@ html, body {
 .concept .fixed-img{
     background: url(./img/fixed1.png) center center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     height:400px;
+}
+
+@media ( min-width: 1000px ) {
+    .concept .fixed-img {
+        background-attachment: fixed;
+    }
 }
 
 /*사진메뉴*/
