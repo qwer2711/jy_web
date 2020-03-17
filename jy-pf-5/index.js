@@ -13,6 +13,15 @@ $('.header .header-menu-text > ul>li').click(function(){
     }
 });
 
+//메인박스 글씨효과
+//한번만재생
+
+setTimeout(function() {
+    $('.sm-link6').toggleClass('hover');
+}, 1000);
+
+
+
 //사진메뉴
 
 function ProdBox1__updateMenuBox1LiActive() {
@@ -218,5 +227,6 @@ $('.insta-box-1-mb > .my-carousel-box-1 > .owl-carousel').owlCarousel({
     onInitialized: ProdBox2__updateMenuBox1LiActive,
     onTranslated: ProdBox2__updateMenuBox1LiActive,
 });
+
 
 
