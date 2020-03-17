@@ -576,91 +576,38 @@ a.sm-link {
 .sm-link_text .sm-link__label {
     transition-property: transform;
     transition-timing-function: cubic-bezier(.86, .6, .08, 1.01);
-    transition-duration: .3s;
+    transition-duration: .6s;
 }
 
 .sm-link_text.hover::before,
 .sm-link_text.hover .sm-link__label {
-    transition-duration: .4s;
+    transition-duration: .6s;
 }
 
 
-/* effect 6 */
+/* effect 8 */
 
 .section {
     position: absolute;
-    top: 28%;
+    top: 20%;
     left: 50%;
     transform: translatex(-50%);
 }
 
 
-.sm-link6::before,
-.sm-link6::after,
-.sm-link6 .sm-link__label::before,
-.sm-link6 .sm-link__label::after {
-    transition-duration: .5s;
-    transition-timing-function: ease-out;
+.sm-link8::before{
+  left: 0;
+  top: 0;
+  transform: translate3d(0, 140%, 0);
 }
 
-.sm-link6::before,
-.sm-link6::after {
-    width: 100%;
-    height: var(--uismLinkLineWeight);
-    left: 0;
+.sm-link8 .sm-link__label,
+.sm-link8.hover::before{
+	transform: translate3d(0, 0, 0);
 }
 
-.sm-link6 .sm-link__label::before,
-.sm-link6 .sm-link__label::after {
-    width: var(--uismLinkLineWeight);
-    height: 100%;
-    top: 0;
-}
-
-.sm-link6::before {
-    top: 0;
-    transform: translate3d(-105%, 0, 0);
-}
-
-.sm-link6::after {
-    bottom: 0;
-    transform: translate3d(105%, 0, 0);
-}
-
-.sm-link6 .sm-link__label::before {
-    left: 0;
-    transform: translate3d(0, 105%, 0);
-}
-
-.sm-link6 .sm-link__label::after {
-    right: 0;
-    transform: translate3d(0, -105%, 0);
-}
-
-.sm-link6.hover::before,
-.sm-link6.hover::after,
-.sm-link6.hover .sm-link__label::before,
-.sm-link6.hover .sm-link__label::after {
-    transform: translate3d(0, 0, 0);
-}
-
-.sm-link6.hover::before {
-    transition-delay: 0s;
-}
-
-.sm-link6 .sm-link__label::after,
-.sm-link6.hover::after {
-    transition-delay: .35s;
-}
-
-.sm-link6::after,
-.sm-link6.hover .sm-link__label::after {
-    transition-delay: .25s;
-}
-
-.sm-link6::before,
-.sm-link6.hover .sm-link__label::before {
-    transition-delay: .45s;
+.sm-link8.hover .sm-link__label{
+  transform: translate3d(0, -300%, 0);	
 }
 
 
@@ -677,10 +624,11 @@ a.sm-link {
 }
 
 .label2{
-    font-size:20px;
+    font-size:25px;
     color:rgba(255,255,255,1);
     text-align: center;
     padding: 0px 10px;
+    font-weight: 350;
    
 }
 

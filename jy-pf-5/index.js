@@ -16,9 +16,9 @@ $('.header .header-menu-text > ul>li').click(function(){
 //메인박스 글씨효과
 //한번만재생
 
-setTimeout(function() {
-    $('.sm-link6').toggleClass('hover');
-}, 1000);
+setInterval(function() {
+    $('.sm-link8').toggleClass('hover');
+}, 3000);
 
 
 
