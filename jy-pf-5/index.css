@@ -750,6 +750,7 @@ html, body {
     border: 3px solid white;
 }
 
+
 /*고정이미지2*/
 
 .fixed {
@@ -1153,7 +1154,7 @@ html, body {
 .mobile-side-menu .side-box .close-icon {
     display: inline-block;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: -20%;
     background-color: black;
     padding: 13px 8px;
@@ -1165,7 +1166,7 @@ html, body {
 
 .mobile-side-menu .side-box .close-icon img {
     width: 30px;
-    padding-left:5px;
+    padding-left: 5px;
 }
 
 
@@ -1310,7 +1311,7 @@ html, body {
     text-align: center;
     font-size: 33px;
     color: #030200;
-    margin-bottom:30px;
+    margin-bottom: 30px;
     font-weight: 500;
 }
 
@@ -1378,6 +1379,7 @@ html, body {
         transform: translatex(-50%);
         display: inline-block;
     }
+}
 
     @media (max-width:930px) {
 
@@ -1470,11 +1472,12 @@ html, body {
     }
 
     .prod-box-1-mb > .menu-box-1 > ul > li > a {
-        padding: 10px 120px;
+        padding: 10px;
         border: 2px solid #000000;
         font-size: 18px;
         font-weight: 400;
         font-style: none;
+        width: 100px;
     }
 
     .prod-box-1-mb > .menu-box-1 > ul > li.active > a {
@@ -1609,8 +1612,6 @@ html, body {
     }
 
 
-
-
     .fashion-mb .fashion-box::after {
         content: '';
         position: absolute;
@@ -1671,7 +1672,8 @@ html, body {
         border: 3px solid white;
     }
 
-    @media (min-width:1060px) {
+
+    @media (min-width:1500px) {
         .fashion-mb {
             display: none;
         }
@@ -1679,7 +1681,7 @@ html, body {
 
     }
 
-    @media (max-width:1059px) {
+    @media (max-width:1499px) {
         .fashion {
             display: none;
         }
@@ -1816,6 +1818,7 @@ html, body {
     }
 
 
+    /*고정이미지 반응형*/
 
 
     @media (max-width:600px) {
@@ -1935,90 +1938,91 @@ html, body {
         }
 
     }
-    
-    
 
-/*하단메뉴 반응형*/
 
-.footer-mb {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
 
-.footer-mb .footer-2 {
-    width: 100%;
-    background-color: #282828;
-}
-    
-    .footer-mb .footer-2 .footer-box ul li{
+    /*하단메뉴 반응형*/
+
+    .footer-mb {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .footer-mb .footer-2 {
+        width: 100%;
+        background-color: #282828;
+    }
+
+    .footer-mb .footer-2 .footer-box ul li {
         line-height: 50px;
         color: #808080;
-        border-bottom: 1px solid rgba(128,128,128,.3);
-        border-left: 1px solid rgba(128,128,128,.3);
-        
+        border-bottom: 1px solid rgba(128, 128, 128, .3);
+        border-left: 1px solid rgba(128, 128, 128, .3);
+
     }
-    .footer-mb .footer-2 .footer-box ul li:last-child{
+
+    .footer-mb .footer-2 .footer-box ul li:last-child {
         border-bottom: 0;
     }
-    
-    .footer-mb .footer-2 .footer-box .part-1 > li{
+
+    .footer-mb .footer-2 .footer-box .part-1 > li {
         border-left: 0;
     }
 
-    
-.footer-mb .footer-2 .footer-box .part-1{
-    width: 50%;
-    text-align: center;
-    border-left: 
-    }
-    
- .footer-mb .footer-2 .footer-box .part-2{
-        width:50%;
-     text-align: center;
+
+    .footer-mb .footer-2 .footer-box .part-1 {
+        width: 50%;
+        text-align: center;
+        border-left:
     }
 
-
-
-
-.footer-mb .copyright {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #000000;
-    padding: 3px 0;
-}
-
-.footer-mb .copyright .container {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.footer-mb .copyright p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #525252;
-    text-align: center;
-    line-height: 18px;
-}
-
-
-@media (min-width:1180px) {
-    .footer-mb {
-        display: none;
+    .footer-mb .footer-2 .footer-box .part-2 {
+        width: 50%;
+        text-align: center;
     }
 
-}
 
-@media (max-width:1179px) {
-    .footer {
-        display: none;
+
+
+    .footer-mb .copyright {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        padding: 3px 0;
     }
 
-    .footer-mb {
-        padding-top: 50px;
+    .footer-mb .copyright .container {
+        width: 100%;
+        margin: 0 auto;
     }
 
-}
+    .footer-mb .copyright p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #525252;
+        text-align: center;
+        line-height: 18px;
+    }
+
+
+    @media (min-width:1180px) {
+        .footer-mb {
+            display: none;
+        }
+
+    }
+
+    @media (max-width:1179px) {
+        .footer {
+            display: none;
+        }
+
+        .footer-mb {
+            padding-top: 50px;
+        }
+
+    }
