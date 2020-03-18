@@ -849,9 +849,8 @@ a {
 }
 
 .section3 > .cultureArea .quarter .list > a .hideObj .squreBox span {
-    display: inline-block;
     margin-top: 5px;
-    padding: 20px 0;
+    padding: 20px;
     width: 250px;
     color: #fff;
     border: 1px solid rgba(255,255,255,0.4);
@@ -1486,7 +1485,7 @@ html, body {
     top:140px;
     left:calc(50% + 380px);
     z-index:100;
-    width:25vw;
+    width:20vw;
     height:20vh;
     
 }
@@ -1879,6 +1878,10 @@ html, body {
     
     .section3 > .cultureArea .quarter .list > a .hideObj .subTxt{
         font-size:15px;
+    }
+    
+    .section3 > .cultureArea .quarter .list > a .hideObj .squreBox{
+        display: block;
     }
     
     .section3 > .cultureArea .quarter .list > a .hideObj .squreBox span{
