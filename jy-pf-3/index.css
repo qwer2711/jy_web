@@ -407,14 +407,12 @@ body {
 }
 
 .mobile-header .logo-1 {
-    width: 100px;
-    height: 15px;
+    width: 25%;
     margin-left: 20px;
 }
 
 .mobile-header .logo-2 {
-    width: 23px;
-    height: 15px;
+    width: 5%;
     margin-right: 20px;
 }
 
