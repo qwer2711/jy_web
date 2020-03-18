@@ -408,12 +408,15 @@ body {
 
 .mobile-header .logo-1 {
     width: 25%;
-    margin-left: 20px;
+    margin-top:30px;
+    margin-left: 30px;
+    
 }
 
 .mobile-header .logo-2 {
     width: 5%;
-    margin-right: 20px;
+    margin-top:30px;
+    margin-right: 30px;
 }
 
 .mobile-side-menu {
@@ -862,7 +865,7 @@ body {
 
 @media (max-width: 1024px) {
     .section1 .video-area .mainmovie {
-        opacity: 0;
+        display: none;
     }
     
     .home .main-visual .video-area .only-pc .pc-image:first-child {
@@ -874,6 +877,13 @@ body {
         white-space: nowrap;
 
     }
+    .pagination{
+        display: none;
+    }
+    
+    .home .main-visual .video-area .iconmouse {
+    bottom:20%;
+}
 
 }
 
