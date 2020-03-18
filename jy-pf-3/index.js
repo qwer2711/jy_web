@@ -37,6 +37,48 @@ $(function() {
     }, 500);
 });
 
+//상단메뉴
+
+$('.header .header-box .menu-2 > ul > li > ul').mouseenter(function(){
+    var HaveActive = $('.header .header-box .menu-2 > ul > li > ul').hasClass('active');
+    
+    if(HaveActive){
+        $(this).removeClass('active');
+    }
+    else{
+        $(this).addClass('active');
+    }
+});
+
+$('.header .header-box .menu-2 > ul > li > ul').mouseleave(function(){
+    $('.header .header-box .menu-2 > ul > li > ul.active').removeClass('active');
+});
+
+// 모바일 사이드메뉴 펼치기 닫기
+
+$('.mobile-wrap .mobile-header .logo-2').click(function(){
+   $('.mobile-side-menu').addClass('active');
+});
+
+$('.mobile-wrap .mobile-side-menu .side-box .close-icon').click(function(){
+   $('.mobile-side-menu').removeClass('active');
+});
+
+// 모바일 사이드메뉴리스트 펼치기
+
+$('.mobile-side-menu .side-box .main-menu > li').click(function(){
+    var b = $(this).hasClass('active');
+    if(b){
+        $(this).removeClass('active');
+        //console.log('active클래스를 가진 클릭된 메뉴아이템은 active클래스를 제거한다.');
+    }
+    else{
+        $(this).addClass('active');
+        $(this).siblings('.active').removeClass('active');
+    }
+});
+
+
 //홈화면 글씨효과
 
 $('.text-obj').mouseenter(function() {
@@ -237,49 +279,3 @@ function IrSlider__onClickPostBtn() {
 
 IrSlider__$slider.click(IrSlider__onClickPostBtn);
 
-//상단메뉴
-
-$('.header .header-box .menu-2 > ul > li > ul').mouseenter(function(){
-    var HaveActive = $('.header .header-box .menu-2 > ul > li > ul').hasClass('active');
-    
-    if(HaveActive){
-        $(this).removeClass('active');
-    }
-    else{
-        $(this).addClass('active');
-    }
-});
-
-$('.header .header-box .menu-2 > ul > li > ul').mouseleave(function(){
-    $('.header .header-box .menu-2 > ul > li > ul.active').removeClass('active');
-});
-
-// 모바일 사이드메뉴 펼치기 닫기
-
-$('.mobile-wrap .mobile-header .logo-2').click(function(){
-   $('.mobile-side-menu').addClass('active');
-});
-
-$('.mobile-wrap .mobile-side-menu .side-box .close-icon').click(function(){
-   $('.mobile-side-menu').removeClass('active');
-});
-
-// 모바일 사이드메뉴리스트 펼치기
-
-$('.mobile-side-menu .side-box .main-menu > li').click(function(){
-    var b = $(this).hasClass('active');
-    if(b){
-        $(this).removeClass('active');
-        //console.log('active클래스를 가진 클릭된 메뉴아이템은 active클래스를 제거한다.');
-    }
-    else{
-        $(this).addClass('active');
-        $(this).siblings('.active').removeClass('active');
-    }
-});
-
-$('a').click(function() {
-    if ( $(this).attr('href') == '#' ) {
-        return false;
-    }
-});
