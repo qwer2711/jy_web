@@ -35,21 +35,22 @@ $(function () {
             interstitialSection: ".section6"
         });
     }, 500);
-    
-    $(window).resize(function() {
+
+    $(window).resize(function () {
         var windowWidth = $(window).width();
-        
-        if ( windowWidth < 700 ) {
-            if ( $.scrollify.isDisabled() == false ) {
+
+        if (windowWidth < 700) {
+            if ($.scrollify.isDisabled() == false) {
                 $.scrollify.disable();
             }
-        }
-        else {
-            if ( $.scrollify.isDisabled() ) {
+        } else {
+            if ($.scrollify.isDisabled()) {
                 $.scrollify.enable();
             }
         }
-    })
+    });
+    
+    $(window).resize();
 });
 
 //상단메뉴

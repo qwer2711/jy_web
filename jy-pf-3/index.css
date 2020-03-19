@@ -408,7 +408,7 @@ body {
 
 .mobile-header .logo-1 {
     width: 30%;
-    margin-top:10px;
+    margin-top: 10px;
     margin-left: 30px;
 
 }
@@ -1401,11 +1401,11 @@ body {
     .section-vision .visionArea .swipeArea .swiper-wrapper .imgBox:hover .hover .txt2 {
         opacity: 0;
     }
-    
+
     .section-vision .visionArea {
-    margin: 0px 0 0 240px;
-    z-index: -2;
-}
+        margin: 0px 0 0 240px;
+        z-index: -2;
+    }
 
 }
 
@@ -1618,113 +1618,113 @@ body {
 
 /*section 모바일버전*/
 
-.section3 > .cultureArea-mb .textArea{
-    position:relative;
-    top:0px;
-    left:0;
-    text-align:center;
-    z-index:3;
-    width:100%;
-    padding-top:40px;
-    padding-bottom:20px;
+.section3 > .cultureArea-mb .textArea {
+    position: relative;
+    top: 0px;
+    left: 0;
+    text-align: center;
+    z-index: 3;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
-.section3 > .cultureArea-mb .textArea .tit{
+.section3 > .cultureArea-mb .textArea .tit {
     font-size: 30px;
     color: #fff;
-    font-family: 'Metropolis-ExtraBold','Noto Sans KR';
+    font-family: 'Metropolis-ExtraBold', 'Noto Sans KR';
     font-weight: 700;
     letter-spacing: 0;
 }
 
-.section3 > .cultureArea-mb .textArea .txt{
+.section3 > .cultureArea-mb .textArea .txt {
     font-size: 15px;
     color: #fff;
-    font-family: 'Metropolis-Light','Noto Sans KR';
+    font-family: 'Metropolis-Light', 'Noto Sans KR';
     font-weight: 300;
 }
 
-.section3 > .cultureArea-mb .hover-img{
+.section3 > .cultureArea-mb .hover-img {
     display: block;
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     z-index: 1;
     width: 100%;
     height: 100%;
 }
 
-.section3 > .cultureArea-mb .hover-img > div{
+.section3 > .cultureArea-mb .hover-img > div {
     position: absolute;
     top: 0;
-    left:0;
-    width:100%;
-    height:1020px;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
-    opacity:0;
+    left: 0;
+    width: 100%;
+    height: 1020px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
 }
 
-.section3 > .cultureArea-mb .hover-img > div.active{
-    opacity:1;
-    z-index:5;
+.section3 > .cultureArea-mb .hover-img > div.active {
+    opacity: 1;
+    z-index: 5;
 }
 
 
 
 .section3 > .cultureArea-mb .quarter .list {
     position: relative;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
-    height:120px;
-    border-bottom:1px solid rgba(255,255,255,0.2);
-    z-index:3;
-    transition:height .4s;
+    height: 120px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 3;
+    transition: height .4s;
 }
 
-.section3 > .cultureArea-mb .quarter .list.active{
-    height:440px;
-    background-color:rgba(0,0,0,0.3);
+.section3 > .cultureArea-mb .quarter .list.active {
+    height: 440px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-.section3 > .cultureArea-mb .quarter .list:first-child{
-    border-top:1px solid rgba(255,255,255,0.2);
+.section3 > .cultureArea-mb .quarter .list:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.section3 > .cultureArea-mb .quarter .list > a > img{
-    position:absolute;
-    top:10%;
-    left:50%;
-    transform:translatex(-50%);
-    width:50px;
-    display:none;
+.section3 > .cultureArea-mb .quarter .list > a > img {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 50px;
+    display: none;
 }
 
-.section3 > .cultureArea-mb .quarter .list.active > a > img{
-    display:block;
+.section3 > .cultureArea-mb .quarter .list.active > a > img {
+    display: block;
 }
- 
 
-.section3 > .cultureArea-mb .quarter .list > a > p{
-    position:absolute;
-    top:20%;
-    left:50%;
-    transform:translatex(-50%);
-    white-space:nowrap;
-    color:white;
-    font-weight:600;
-    font-size:18px;
-    
+
+.section3 > .cultureArea-mb .quarter .list > a > p {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translatex(-50%);
+    white-space: nowrap;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+
 }
 
 .section3 > .cultureArea-mb .quarter .list > a .hideObj {
-    position:absolute;
-    top:10%;
-    left:50%;
-    transform:translatex(-50%);
-    text-align:center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translatex(-50%);
+    text-align: center;
     visibility: hidden;
 }
 
@@ -1735,7 +1735,7 @@ body {
 .section3 > .cultureArea-mb .quarter .list > a .hideObj .subTxt {
     padding-top: 80px;
     color: #fff;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     line-height: 22px;
 }
 
@@ -1744,22 +1744,23 @@ body {
 }
 
 .section3 > .cultureArea-mb .quarter .list > a .hideObj .squreBox span {
-    display:block;
-    margin:0 auto;
+    display: block;
+    margin: 0 auto;
     margin-top: 5px;
     padding: 20px 0;
     width: 250px;
     color: #fff;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 
 }
 
 
 @media (min-width:750px) {
-    .section3 > .cultureArea-mb{
+    .section3 > .cultureArea-mb {
         display: none;
     }
-     .section3 > .cultureArea-mb .movieArea {
+
+    .section3 > .cultureArea-mb .movieArea {
         display: none;
     }
 
@@ -1769,7 +1770,7 @@ body {
 }
 
 @media (max-width:749px) {
-    .section3 > .cultureArea{
+    .section3 > .cultureArea {
         display: none;
     }
 }
@@ -1892,66 +1893,67 @@ body {
 
 }
 
-@media (max-width:1400px){
+@media (max-width:1400px) {
     .section4 .newArea {
-    padding-top: 170px;
-    width:auto;
-}
+        padding-top: 170px;
+        width: auto;
+    }
+
     .newArea .news a div > .subject2 {
-    width: auto;
-   
-}
+        width: auto;
+
+    }
 }
 
-@media (max-width:740px){
+@media (max-width:740px) {
     .section4 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
 
-}
+    }
 
-.section4 .newArea {
-    padding-top:250px;
-    width: atuo;
-    height: 1000px;
-}
+    .section4 .newArea {
+        padding-top: 250px;
+        width: atuo;
+        height: 1000px;
+    }
 
     .section4 .newArea .top .more {
-    font-size:18px;
-    font-weight: 600;
-    margin-top: 27px;
-    margin-right: 20px;
-    text-decoration: underline;
-    display: block;
-}
-    
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 27px;
+        margin-right: 20px;
+        text-decoration: underline;
+        display: block;
+    }
+
     .newArea .news a div > .subject > span {
-    font-size:18px;
-    color: #222;
-    font-weight: 700;
-    line-height: 27px;
-    margin-left: 40px;
-    white-space: nowrap;
-    width: 100%;
-}
-    
+        font-size: 18px;
+        color: #222;
+        font-weight: 700;
+        line-height: 27px;
+        margin-left: 40px;
+        white-space: nowrap;
+        width: 100%;
+    }
+
     .newArea .news a div .date {
-    position: absolute;
-    top: 80%;
-    left: 40px;
-    font-size: 17px;
-    color: #888;
-    font-weight: 600;
-    margin-right: 40px;
-}
+        position: absolute;
+        top: 80%;
+        left: 40px;
+        font-size: 17px;
+        color: #888;
+        font-weight: 600;
+        margin-right: 40px;
+    }
 
-.newArea .news a.active div .date {
-    top: 80%;
-    left: 40px;
+    .newArea .news a.active div .date {
+        top: 80%;
+        left: 40px;
 
-}
+    }
 }
 
 /*4번째페이지 끝*/
@@ -2392,4 +2394,3 @@ html[data-scrollify-index="3"] .header .header-box .menu-1 > ul > li > a {
 html[data-scrollify-index="3"] .pagination a {
     color: black;
 }
-
