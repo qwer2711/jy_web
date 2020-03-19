@@ -408,14 +408,14 @@ body {
 
 .mobile-header .logo-1 {
     width: 30%;
-    margin-top: 30px;
+    margin-top:10px;
     margin-left: 30px;
 
 }
 
 .mobile-header .logo-2 {
     width: 6%;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-right: 30px;
 }
 
@@ -1315,7 +1315,7 @@ body {
     .section-vision .visionArea .swipeArea .swiper-container {
         padding-right: 230px;
         padding-left: 45px;
-        padding-top: 450px;
+        padding-top: 380px;
         padding-bottom: 20px;
         transition: padding 1.2s ease 0.8s;
     }
@@ -1614,7 +1614,7 @@ body {
 
 .section3 > .cultureArea-mb .textArea{
     position:relative;
-    top:0;
+    top:30px;
     left:0;
     text-align:center;
     z-index:3;
@@ -1664,13 +1664,7 @@ body {
     z-index:5;
 }
 
-.section3 > .cultureArea-mb .quarter{
-    position:absolute;
-    top:200px;
-    left:0;
-    width:100%;
-    height:100%;
-}
+
 
 .section3 > .cultureArea-mb .quarter .list {
     position: relative;

@@ -1,11 +1,11 @@
 console.clear();
-$(function() {
-    setTimeout(function() {
+$(function () {
+    setTimeout(function () {
         $.scrollify({
-            section:".section",
-            scrollbars:false,
-            setHeights:false,
-            before:function(i,panels) {
+            section: ".section",
+            scrollbars: false,
+            setHeights: false,
+            before: function (i, panels) {
                 console.log("i : " + i);
                 $('html').attr('data-scrollify-index', i);
                 $('.section.active').eq(i).removeClass('active');
@@ -13,14 +13,14 @@ $(function() {
                 $('.section').eq(i).addClass('visited');
                 var ref = panels[i].attr("data-section-name");
                 $(".pagination .active").removeClass("active");
-                $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active"); 
+                $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
             },
-            afterRender:function() {
+            afterRender: function () {
                 var pagination = "<ul class=\"pagination\">";
                 var activeClass = "";
-                $(".section").each(function(i) {
+                $(".section").each(function (i) {
                     activeClass = "";
-                    if ( i === 0 ) {
+                    if (i === 0) {
                         activeClass = "active";
                     }
                     pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
@@ -32,47 +32,60 @@ $(function() {
 
                 $(".pagination a").on("click", $.scrollify.move);
             },
-            interstitialSection:".section6"
-        });        
+            interstitialSection: ".section6"
+        });
     }, 500);
+    
+    $(window).resize(function() {
+        var windowWidth = $(window).width();
+        
+        if ( windowWidth < 700 ) {
+            if ( $.scrollify.isDisabled() == false ) {
+                $.scrollify.disable();
+            }
+        }
+        else {
+            if ( $.scrollify.isDisabled() ) {
+                $.scrollify.enable();
+            }
+        }
+    })
 });
 
 //상단메뉴
 
-$('.header .header-box .menu-2 > ul > li > ul').mouseenter(function(){
+$('.header .header-box .menu-2 > ul > li > ul').mouseenter(function () {
     var HaveActive = $('.header .header-box .menu-2 > ul > li > ul').hasClass('active');
-    
-    if(HaveActive){
+
+    if (HaveActive) {
         $(this).removeClass('active');
-    }
-    else{
+    } else {
         $(this).addClass('active');
     }
 });
 
-$('.header .header-box .menu-2 > ul > li > ul').mouseleave(function(){
+$('.header .header-box .menu-2 > ul > li > ul').mouseleave(function () {
     $('.header .header-box .menu-2 > ul > li > ul.active').removeClass('active');
 });
 
 // 모바일 사이드메뉴 펼치기 닫기
 
-$('.mobile-wrap .mobile-header .logo-2').click(function(){
-   $('.mobile-side-menu').addClass('active');
+$('.mobile-wrap .mobile-header .logo-2').click(function () {
+    $('.mobile-side-menu').addClass('active');
 });
 
-$('.mobile-wrap .mobile-side-menu .side-box .close-icon').click(function(){
-   $('.mobile-side-menu').removeClass('active');
+$('.mobile-wrap .mobile-side-menu .side-box .close-icon').click(function () {
+    $('.mobile-side-menu').removeClass('active');
 });
 
 // 모바일 사이드메뉴리스트 펼치기
 
-$('.mobile-side-menu .side-box .main-menu > li').click(function(){
+$('.mobile-side-menu .side-box .main-menu > li').click(function () {
     var b = $(this).hasClass('active');
-    if(b){
+    if (b) {
         $(this).removeClass('active');
         //console.log('active클래스를 가진 클릭된 메뉴아이템은 active클래스를 제거한다.');
-    }
-    else{
+    } else {
         $(this).addClass('active');
         $(this).siblings('.active').removeClass('active');
     }
@@ -81,22 +94,22 @@ $('.mobile-side-menu .side-box .main-menu > li').click(function(){
 
 //홈화면 글씨효과
 
-$('.text-obj').mouseenter(function() {
+$('.text-obj').mouseenter(function () {
     $(this).attr('data-mouseenter', 'Y');
 });
 
 
-$('.text-obj').mouseleave(function() {
+$('.text-obj').mouseleave(function () {
     $(this).attr('data-mouseenter', 'N');
     $('.text-obj').attr('data-auto-animation-index', 0);
 });
 
-setInterval(function() {
+setInterval(function () {
     var index = parseInt($('.text-obj').attr('data-auto-animation-index'));
 
     index++;
 
-    if ( index >= 4 ) {
+    if (index >= 4) {
         index = 0;
     }
 
@@ -104,7 +117,7 @@ setInterval(function() {
 }, 2000);
 
 //이미지와 호버연결
-$('.main-visual .video-area .text-obj ul > li').mouseover(function(){
+$('.main-visual .video-area .text-obj ul > li').mouseover(function () {
     var index = $(this).index();
     var $mainVisual = $(this).closest('.main-visual');
 
@@ -115,7 +128,7 @@ $('.main-visual .video-area .text-obj ul > li').mouseover(function(){
 
 //호버안했을때 동영상으로 다시 돌아오기
 
-$('.main-visual .video-area .text-obj a').mouseleave(function(){
+$('.main-visual .video-area .text-obj a').mouseleave(function () {
     $('.main-visual .video-area .only-pc .pc-image.active').removeClass('active');
 });
 
@@ -123,20 +136,20 @@ $('.main-visual .video-area .text-obj a').mouseleave(function(){
 //두번째페이지
 
 var visionSwipe = new Swiper('.visionArea .swiper-container', {
-    slidesPerView : "auto",
-    spaceBetween : 30,
+    slidesPerView: "auto",
+    spaceBetween: 30,
     navigation: {
         nextEl: '.visionArea .swiper-button-next',
         prevEl: '.visionArea .swiper-button-prev',
     },
-    on : {
-        slideChange : function () {
+    on: {
+        slideChange: function () {
             $('.section-vision').attr('data-vision-swipe-index', visionSwipe.activeIndex);
         }
     },
     pagination: {
         el: '.swiper-pagination',
-        type : 'progressbar',
+        type: 'progressbar',
     },
     breakpoints: {
         1280: {
@@ -146,14 +159,14 @@ var visionSwipe = new Swiper('.visionArea .swiper-container', {
 
         },
         500: {
-            spaceBetween : 15,
+            spaceBetween: 15,
         }
     },
 });
 
 //세번째페이지
 
-$('.section3 > .cultureArea .quarter .list:nth-child(1) > a').mouseenter(function(){
+$('.section3 > .cultureArea .quarter .list:nth-child(1) > a').mouseenter(function () {
 
     var $hoverImg = $(this).closest('.section3');
 
@@ -162,7 +175,7 @@ $('.section3 > .cultureArea .quarter .list:nth-child(1) > a').mouseenter(functio
     $hoverImg.find('> .cultureArea .hover-img > div:nth-child(1)').addClass('active');
 });
 
-$('.section3 > .cultureArea .quarter .list:nth-child(2) > a').mouseenter(function(){
+$('.section3 > .cultureArea .quarter .list:nth-child(2) > a').mouseenter(function () {
 
     var $hoverImg = $(this).closest('.section3');
 
@@ -171,7 +184,7 @@ $('.section3 > .cultureArea .quarter .list:nth-child(2) > a').mouseenter(functio
     $hoverImg.find('> .cultureArea .hover-img > div:nth-child(2)').addClass('active');
 });
 
-$('.section3 > .cultureArea .quarter .list:nth-child(3) > a').mouseenter(function(){
+$('.section3 > .cultureArea .quarter .list:nth-child(3) > a').mouseenter(function () {
 
     var $hoverImg = $(this).closest('.section3');
 
@@ -180,7 +193,7 @@ $('.section3 > .cultureArea .quarter .list:nth-child(3) > a').mouseenter(functio
     $hoverImg.find('> .cultureArea .hover-img > div:nth-child(3)').addClass('active');
 });
 
-$('.section3 > .cultureArea .quarter .list:nth-child(4) > a').mouseenter(function(){
+$('.section3 > .cultureArea .quarter .list:nth-child(4) > a').mouseenter(function () {
 
     var $hoverImg = $(this).closest('.section3');
 
@@ -191,12 +204,12 @@ $('.section3 > .cultureArea .quarter .list:nth-child(4) > a').mouseenter(functio
 
 
 //호버떼면 다시 동영상으로 
-$('.section3 > .cultureArea .quarter .list > a').mouseleave(function(){
+$('.section3 > .cultureArea .quarter .list > a').mouseleave(function () {
     $('.section3 > .cultureArea .hover-img > div.active').removeClass('active');
 });
 
 //세번째 모바일버전
-$('.section3 > .cultureArea-mb .quarter .list:nth-child(1) > a').mouseenter(function(){
+$('.section3 > .cultureArea-mb .quarter .list:nth-child(1) > a').mouseenter(function () {
 
     var $hoverImg = $(this).closest('.section3');
 
@@ -205,7 +218,7 @@ $('.section3 > .cultureArea-mb .quarter .list:nth-child(1) > a').mouseenter(func
     $hoverImg.find('> .cultureArea-mb .hover-img > div:nth-child(1)').addClass('active');
 });
 
-$('.section3 > .cultureArea-mb .quarter .list:nth-child(2) > a').mouseenter(function(){
+$('.section3 > .cultureArea-mb .quarter .list:nth-child(2) > a').mouseenter(function () {
 
     var $hoverImg = $(this).closest('.section3');
 
@@ -214,7 +227,7 @@ $('.section3 > .cultureArea-mb .quarter .list:nth-child(2) > a').mouseenter(func
     $hoverImg.find('> .cultureArea-mb .hover-img > div:nth-child(2)').addClass('active');
 });
 
-$('.section3 > .cultureArea-mb .quarter .list:nth-child(3) > a').mouseenter(function(){
+$('.section3 > .cultureArea-mb .quarter .list:nth-child(3) > a').mouseenter(function () {
 
     var $hoverImg = $(this).closest('.section3');
 
@@ -223,7 +236,7 @@ $('.section3 > .cultureArea-mb .quarter .list:nth-child(3) > a').mouseenter(func
     $hoverImg.find('> .cultureArea-mb .hover-img > div:nth-child(3)').addClass('active');
 });
 
-$('.section3 > .cultureArea-mb .quarter .list:nth-child(4) > a').mouseenter(function(){
+$('.section3 > .cultureArea-mb .quarter .list:nth-child(4) > a').mouseenter(function () {
 
     var $hoverImg = $(this).closest('.section3');
 
@@ -232,15 +245,23 @@ $('.section3 > .cultureArea-mb .quarter .list:nth-child(4) > a').mouseenter(func
     $hoverImg.find('> .cultureArea-mb .hover-img > div:nth-child(4)').addClass('active');
 });
 
-$('.section3 > .cultureArea-mb .quarter .list').click(function(){
-     $(this).addClass('active');
-     $(this).siblings('.active').removeClass('active');
-})
+
+$('.section3 > .cultureArea-mb .quarter .list').click(function () {
+    var b = $(this).hasClass('active');
+    if (b) {
+        $(this).removeClass('active');
+        //console.log('active클래스를 가진 클릭된 메뉴아이템은 active클래스를 제거한다.');
+    } else {
+        $(this).addClass('active');
+        $(this).siblings('.active').removeClass('active');
+    }
+});
 
 //4번째페이지
 
-$('.section4 .newArea .news a').mouseenter(function(){
-    $(this).addClass('active');  $(this).siblings('.active').removeClass('active');
+$('.section4 .newArea .news a').mouseenter(function () {
+    $(this).addClass('active');
+    $(this).siblings('.active').removeClass('active');
 });
 
 
@@ -260,18 +281,16 @@ function IrSlider__onClickPostBtn() {
     var $current = $slider.find(' > .slides > div.active');
     var $post;
 
-    if ( isLeft ) {
+    if (isLeft) {
         $post = $current.prev();
-    }
-    else {
+    } else {
         $post = $current.next();
     }
 
-    if ( $post.length == 0 ) {
-        if ( isLeft ) {
+    if ($post.length == 0) {
+        if (isLeft) {
             $post = $slider.find(' > .slides > div:last-child');
-        }
-        else {
+        } else {
             $post = $slider.find(' > .slides > div:first-child');
         }
     }
@@ -281,4 +300,3 @@ function IrSlider__onClickPostBtn() {
 }
 
 IrSlider__$slider.click(IrSlider__onClickPostBtn);
-
