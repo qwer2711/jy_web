@@ -912,8 +912,17 @@ body {
 }
 
 @media(max-width:540px) {
+    .home .main-visual .video-area .text-obj {
+    top: 35%;
+    left: 50%;
+    transform: translatex(-50%)translatey(-50%);
+}
     .main-visual .video-area .text-obj > ul > li > div {
         font-size: 14px;
+    }
+    
+     .home .main-visual .video-area .iconmouse {
+        bottom: 18%;
     }
 }
 
