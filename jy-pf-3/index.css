@@ -445,7 +445,7 @@ body {
 .mobile-side-menu .side-box > .top-menu {
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 45px;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -453,7 +453,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translatey(-50%);
-    width: 200px;
+    width: 90px;
     margin-left: 20px;
 }
 
@@ -462,13 +462,14 @@ body {
     right: 0;
     top: 50%;
     transform: translatey(-50%);
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .mobile-side-menu .side-box > .top-menu .language > a {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     color: #888888;
+    letter-spacing: -1px;
 }
 
 .mobile-side-menu .side-box > .top-menu .language > a.active {
@@ -497,7 +498,7 @@ body {
 
 .mobile-side-menu .side-box .main-menu > li i {
     color: #9e9e9e;
-    font-size: 40px;
+    font-size: 23px;
 }
 
 .mobile-side-menu .side-box .main-menu > li .icon-up {
@@ -523,18 +524,19 @@ body {
 .mobile-side-menu .side-box .main-menu ul > li > a {
     display: block;
     padding: 10px 15px 10px 25px;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 16;
+    font-weight:600;
     color: #222222;
 }
 
 
 .mobile-side-menu .side-box .main-menu > li > a {
     display: block;
-    padding: 25px;
+    padding: 20px;
     border-bottom: 1px solid #dddddd;
-    font-size: 30px;
+    font-size:18px;
     font-weight: 700;
+    color: #222222;
 
 }
 
@@ -542,34 +544,39 @@ body {
     border-bottom: 0;
 }
 
+.mobile-side-menu .side-box .main-menu > li > a > img{
+    width:100%;
+}
+
 .mobile-side-menu .side-box .main-menu > li > a p {
     position: absolute;
     top: 50%;
     transform: translatey(-100%);
     left: 50px;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 .mobile-side-menu .side-box .main-menu > li > a .arrow {
     position: absolute;
     top: 65%;
     left: 53px;
-    width: 35px;
+    width: 25px;
 }
 
 .mobile-side-menu .side-box .close-icon {
     display: inline-block;
     position: absolute;
     top: 45%;
-    transform: translateY(-50%);
-    left: -80px;
-    padding: 15px;
+    transform: translateY(-45%);
+    left: -21%;
+    padding: 12px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
 .mobile-side-menu .side-box .close-icon img {
-    width: 35px;
+    width: 25px;
+    height: 25px;
 }
 
 
@@ -899,9 +906,15 @@ body {
     }
 
     .home .main-visual .video-area .iconmouse {
-        bottom: 20%;
+        bottom: 10%;
     }
 
+}
+
+@media(max-width:540px){
+    .main-visual .video-area .text-obj > ul > li > div{
+        font-size: 14px;
+    }
 }
 
 @media (max-width:485px) {
