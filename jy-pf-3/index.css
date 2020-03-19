@@ -1401,6 +1401,12 @@ body {
     .section-vision .visionArea .swipeArea .swiper-wrapper .imgBox:hover .hover .txt2 {
         opacity: 0;
     }
+    
+    .section-vision .visionArea {
+    margin: 0px 0 0 240px;
+    z-index: -2;
+}
+
 }
 
 
@@ -1614,7 +1620,7 @@ body {
 
 .section3 > .cultureArea-mb .textArea{
     position:relative;
-    top:30px;
+    top:0px;
     left:0;
     text-align:center;
     z-index:3;
@@ -1653,12 +1659,13 @@ body {
     top: 0;
     left:0;
     width:100%;
-    height:1000px;
+    height:1020px;
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
     opacity:0;
 }
+
 .section3 > .cultureArea-mb .hover-img > div.active{
     opacity:1;
     z-index:5;
