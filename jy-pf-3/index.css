@@ -525,7 +525,7 @@ body {
     display: block;
     padding: 10px 15px 10px 25px;
     font-size: 16;
-    font-weight:600;
+    font-weight: 600;
     color: #222222;
 }
 
@@ -534,7 +534,7 @@ body {
     display: block;
     padding: 20px;
     border-bottom: 1px solid #dddddd;
-    font-size:18px;
+    font-size: 18px;
     font-weight: 700;
     color: #222222;
 
@@ -544,8 +544,8 @@ body {
     border-bottom: 0;
 }
 
-.mobile-side-menu .side-box .main-menu > li > a > img{
-    width:100%;
+.mobile-side-menu .side-box .main-menu > li > a > img {
+    width: 100%;
 }
 
 .mobile-side-menu .side-box .main-menu > li > a p {
@@ -911,8 +911,8 @@ body {
 
 }
 
-@media(max-width:540px){
-    .main-visual .video-area .text-obj > ul > li > div{
+@media(max-width:540px) {
+    .main-visual .video-area .text-obj > ul > li > div {
         font-size: 14px;
     }
 }
@@ -1110,7 +1110,7 @@ body {
 }
 
 .section-vision.visited .visionAreaBg {
-    width: 610px;
+    width: 30%;
 }
 
 /*swiper 슬라이드*/
@@ -1205,6 +1205,178 @@ body {
 
 .section-vision .visionArea .swipeArea .swiper-container .swiper-pagination .swiper-pagination-progressbar-fill {
     background-color: #b1c712;
+}
+
+@media (max-width:1000px) {
+    .section-vision .visionArea .txtArea {
+        top: -130px;
+        left: -180px;
+    }
+
+    .section-vision[data-vision-swipe-index="0"] .visionArea .txtArea > .mTxt {
+        font-size: 65px;
+        font-weight: 900;
+        transform: translateY(-10px);
+    }
+
+
+    .section-vision .visionArea .swipe-button {
+        position: absolute;
+        top: 38%;
+        width: 100%;
+        left: 0;
+    }
+
+    .section-vision .visionArea .swipeArea .swiper-container {
+        padding-left: 480px;
+        padding-top: 200px;
+    }
+
+    .section-vision .visionArea .txtArea > .mTxt {
+        top: 34px;
+        left: -20px;
+        font-size: 110px;
+    }
+
+}
+
+@media (max-width:810px) {
+    .section-vision .visionArea .swipeArea .swiper-container {
+        padding-left: 420px;
+        padding-top: 200px;
+    }
+    
+    
+}
+
+
+
+@media (max-width:750px) {
+    .section-vision .visionArea .txtArea {
+        top: -170px;
+        left: -200px;
+    }
+
+    .section-vision[data-vision-swipe-index="0"] .visionArea .txtArea > .mTxt {
+        font-size: 45px;
+        top:10px;
+        left:-4px;
+    }
+
+    .section-vision .visionArea .txtArea > .title {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+
+
+    .section-vision .visionArea .txtArea .txt {
+        padding-top: 70px;
+        font-size: 15px;
+        font-weight: 400;
+        white-space: nowrap;
+    }
+
+    .section-vision .visionArea .txtArea .btnMore {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top:10px;
+    }
+    
+    .section-vision .visionArea .txtArea > .mTxt {
+        top:203px;
+        left:-20px;
+        font-size:40px;
+    }
+    
+    .section-vision .visionArea .swipeArea .swiper-container {
+    padding-right: 230px;
+    padding-left:45px;
+    padding-top: 450px;
+    padding-bottom: 20px;
+    transition: padding 1.2s ease 0.8s;
+}
+
+    
+    .section-vision .visionArea .swipe-button {
+       display: none;
+    }
+    
+    .section-vision .visionArea .swipeArea .swiper-slide {
+    width: 270px;
+    height: 200px;
+}
+    
+    .section-vision .visionArea .swipeArea .swiper-wrapper .imgBox >img{
+        width: 270px;
+        height: 200px;
+    }
+    
+    .section-vision .visionArea .swipeArea .swiper-wrapper .imgBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: url(./img/section2_bg.png);
+
+}
+    
+    .section-vision .visionArea .swipeArea .swiper-wrapper .imgBox .hover {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 270px;
+    height: 318px;
+    background: none;
+    transition: all 0.3s ease-out;
+
+}
+    .section-vision .visionArea .swipeArea .swiper-wrapper .imgBox .hover .tit {
+    position: relative;
+    margin-top: 40px;
+    font-size: 18px;
+    color:aliceblue;
+    font-family: 'Metropolis-Bold', 'Noto Sans KR';
+    font-weight: 700;
+    line-height: 32px;
+    transition: all 0.3s ease-out;
+    padding: 0px 10px;
+}
+    
+    .section-vision .visionArea .swipeArea .swiper-wrapper .imgBox:hover .hover {
+    top:70px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.0);
+    background-color:rgba(255,255,255,0);
+}
+
+.section-vision .visionArea .swipeArea .swiper-wrapper .imgBox .hover .txt1 {
+    opacity: 0;
+    position: relative;
+    top: 40px;
+    padding-top: 0;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(34, 34, 34, 0.7);
+    font-family: 'Metropolis-Regular', 'Noto Sans KR';
+    font-weight: 400;
+    padding-bottom: 52px;
+    transition: all 0.3s ease-out;
+    padding: 0px 45px;
+}
+
+.section-vision .visionArea .swipeArea .swiper-wrapper .imgBox:hover .hover .txt1 {
+    opacity: 0;
+}
+
+.section-vision .visionArea .swipeArea .swiper-wrapper .imgBox:hover .hover .tit {
+    color:aliceblue;
+}
+
+.section-vision .visionArea .swipeArea .swiper-wrapper .imgBox:hover .hover .txt2 {
+    opacity: 0;
+}
 }
 
 
