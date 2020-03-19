@@ -232,7 +232,10 @@ $('.section3 > .cultureArea-mb .quarter .list:nth-child(4) > a').mouseenter(func
     $hoverImg.find('> .cultureArea-mb .hover-img > div:nth-child(4)').addClass('active');
 });
 
-
+$('.section3 > .cultureArea-mb .quarter .list').click(function(){
+     $(this).addClass('active');
+     $(this).siblings('.active').removeClass('active');
+})
 
 //4번째페이지
 
