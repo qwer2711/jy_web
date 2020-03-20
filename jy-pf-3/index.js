@@ -266,6 +266,10 @@ $('.section4 .newArea .news a').mouseenter(function () {
     $(this).siblings('.active').removeClass('active');
 });
 
+$('.section4 .newArea .news a').mouseleave(function () {
+    $(this).removeClass('active');
+});
+
 
 //5번째페이지
 
