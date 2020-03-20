@@ -39,7 +39,7 @@ $(function () {
     $(window).resize(function () {
         var windowWidth = $(window).width();
 
-        if (windowWidth < 700) {
+        if (windowWidth < 770) {
             if ($.scrollify.isDisabled() == false) {
                 $.scrollify.disable();
                 $('.section2').addClass('visited'); // 모바일에서 강제 활성화
