@@ -1911,6 +1911,7 @@ body {
         top: 0;
         left: 0;
         width: 100%;
+        height: 1000px;
 
     }
 
@@ -2356,7 +2357,7 @@ body {
 
     .section5 .irgrid {
         margin: 20px auto 20px;
-        width: 1000px;
+        width: 100%;
         overflow: hidden;
     }
 
@@ -2434,19 +2435,19 @@ body {
 
     .section5 {
         width: 100%;
+        height: 1200px;
     }
 
     .section5 .irgrid {
-        margin:
-            width: 100%;
-        height: 100%;
+        margin: 20px auto 20px;
+        width: 100%;
         overflow: hidden;
     }
 
     .section5 .row .cell {
-        width: 100%;
+        width:90%;
         height: auto;
-        margin-left: 0px;
+        margin: 0 auto;
     }
 
     .section5 .row .cell div .text {
@@ -2455,14 +2456,29 @@ body {
 
     .section5 .row .cell .part-1 {
         padding: 25px;
-        width: 100%;
+        width:100%;
         height: 200px;
     }
 
     .section5 .row .cell .part-2 {
-        padding: 25px;
+        padding: 20px;
         width: 100%;
         height: 200px;
+        margin:0 auto;
+    }
+
+    .section5 .row .cell .part-3 {
+        padding: 25px;
+        width: 50%;
+        height: 120px;
+        overflow: hidden;
+        
+    }
+
+    .section5 .row .cell .part-4 {
+        padding: 25px;
+        width: 50%;
+        height: 120px;
     }
 
     .section5 .row .cell:nth-child(2) div .text {
@@ -2487,12 +2503,9 @@ body {
 
     .section5 .row .cell .part-2 .stockNum {
         font-size: 40px;
-        color: #f11a1a;
-        font-family: 'Metropolis-Light', 'Noto Sans KR';
-        font-weight: 400;
         display: inline-block;
         margin-top: 20px;
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     .section5 .row .cell .part-2 .more {
@@ -2503,9 +2516,9 @@ body {
     .section5 .row .cell .part-2 .info {
         margin-top: 0px;
     }
-    
-    .section5 .row .cell .part-2 .info .list{
-        width: 600px;
+
+    .section5 .row .cell .part-2 .info .list {
+        width: 300px;
     }
 
     .section5 .row .cell .part-2 .info .list p {
@@ -2520,45 +2533,46 @@ body {
 
 
     .section5 .row .cell:nth-child(1) {
+        margin-left: 25px;
+        margin-top: 10px;
         overflow: hidden;
     }
 
     .section5 .row .cell:nth-child(2) {
-        margin-left: 0px;
-        margin-top: 20px;
+        margin-left: 25px;
+        margin-top: 10px;
     }
 
     .section5 .row .cell:nth-child(3) {
-        margin-left: 0;
+        margin-left: 25px;
+        margin-top: 10px;
     }
-
+    
     .section5 .row .cell:nth-child(3) .part-4 {
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
-
-    .section5 .row .cell .part-3 {
-        padding: 25px;
-        width: 45%;
-        height: 170px;
-        margin-top:20px;
+    .section5 .row .cell .part-3 .side-btns {
+        position: relative;
+        top: -20px;
+        left: 60%;
+        display: inline-block;
     }
 
-    .section5 .row .cell .part-4 {
-        padding: 25px;
-        width: 50%;
-        height: 200px;
+    .section5 .row .cell .part-3 .slider .slides > div {
+        margin-top: 10px;
 
     }
 
+    
     .section5 .row .cell .part-4 .text img {
-       opacity: 0;
+        opacity: 0;
     }
 
     .section5 .row .cell .part-4:hover .text img {
-      opacity: 0;
-}
-    
+        opacity: 0;
+    }
+
 }
 
 
