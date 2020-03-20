@@ -139,6 +139,13 @@ body {
     overflow-x: hidden;
 }
 
+@media (max-width:1903px) and (min-width:771px){
+    section{
+        height: 100vh;
+    }
+}
+
+
 .header {
     position: fixed;
     top: 0;
@@ -1785,6 +1792,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    background-color: white;
 
 }
 
@@ -1800,6 +1808,7 @@ body {
     font-weight: 800;
     letter-spacing: 3px;
     margin-left: 100px;
+    z-index: 3;
 }
 
 .section4 .newArea .top .word::after {
@@ -1895,7 +1904,7 @@ body {
 
 @media (max-width:1400px) {
     .section4 .newArea {
-        padding-top: 170px;
+        padding-top: 50px;
         width: auto;
     }
 
