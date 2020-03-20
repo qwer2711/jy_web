@@ -125,11 +125,6 @@ a {
 
 /*상단메뉴*/
 
-@media ( min-width:770px ){
-    section{
-        height: 100vh;
-    }
-}
 
 .con {
     max-width: 1920px;
@@ -1939,14 +1934,14 @@ body {
         text-decoration: underline;
         display: block;
     }
-    
+
     .newArea .news a div > .content {
-    font-size: 15px;
-    color: #b1c712;
-    font-weight: 600;
-    margin-left: 20px;
-}
-    
+        font-size: 15px;
+        color: #b1c712;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+
 
     .newArea .news a div > .subject > span {
         font-size: 17px;
@@ -1956,11 +1951,11 @@ body {
         margin-left: 20px;
         white-space: nowrap;
         width: 100%;
-        overflow:hidden;
+        overflow: hidden;
         text-overflow: ellipsis;
         text-indent: 100px;
     }
-    
+
     .newArea .news a div > .subject2 {
         margin-left: 20px;
     }
@@ -2002,11 +1997,11 @@ body {
     width: 100%;
     text-align: center;
     display: block;
-    padding-top:50px;
+    padding-top: 50px;
 
 }
 
-.section5 .irgrid{
+.section5 .irgrid {
     margin: 60px auto 60px;
     width: 1200px;
     overflow: hidden;
@@ -2017,7 +2012,7 @@ body {
     font-size: 4rem;
     font-family: 'Metropolis-Light', 'Noto Sans KR';
     font-weight: 800;
-   
+
 }
 
 .section5 .irArea .txt {
@@ -2046,8 +2041,8 @@ body {
     margin-left: 32px;
 }
 
-.section5 .row .cell:nth-child(3) .part-4{
-    margin-top:30px;
+.section5 .row .cell:nth-child(3) .part-4 {
+    margin-top: 30px;
 }
 
 .section5 .row .cell .part-1 {
@@ -2154,10 +2149,10 @@ body {
 
 .section5 .row .cell .part-3 {
     width: 100%;
-    height:calc(50% - 20px);
+    height: calc(50% - 20px);
     background-color: white;
     user-select: none;
-    
+
 }
 
 .section5 .row .cell .part-3 .text .title {
@@ -2258,7 +2253,7 @@ body {
 .section5 .row .cell .part-4 .text img {
     position: relative;
     left: 200px;
-    top:20px;
+    top: 20px;
     opacity: 0;
     transition: top .4s;
 }
@@ -2267,6 +2262,306 @@ body {
     top: -118px;
     opacity: 1;
 }
+
+@media (max-width:1270px) {
+
+    .section5 .irgrid {
+        margin: 20px auto 20px;
+        width: 1200px;
+        overflow: hidden;
+    }
+
+    .section5 .row .cell {
+        width: auto;
+        height: auto;
+        margin-left: 15px;
+    }
+
+    .section5 .row .cell div .text {
+        padding: 0;
+    }
+
+    .section5 .row .cell .part-1 {
+        padding: 38px 30px 0 30px;
+        width: 290px;
+        height: 400px;
+    }
+
+    .section5 .row .cell .part-2 {
+        padding: 38px 30px 0 30px;
+        width: 290px;
+        height: 400px;
+        margin-left: 15px;
+    }
+
+    .section5 .row .cell:nth-child(1) {
+        overflow: hidden;
+    }
+
+    .section5 .row .cell:nth-child(2) {
+        margin-left: 15px;
+    }
+
+    .section5 .row .cell:nth-child(3) {
+        margin-left: 15px;
+        width: 100px;
+        height: 400px;
+    }
+
+    .section5 .row .cell:nth-child(3) .part-4 {
+        margin-top: 15px;
+    }
+
+    .section5 .row .cell .part-3 {
+        padding: 15px 30px;
+        width: 280px;
+        height: calc(50% - 20px);
+    }
+
+    .section5 .row .cell .part-3 .text .title {
+        margin-bottom: 0;
+        font-size: 20px;
+        color: #222;
+        font-family: 'Metropolis-Bold', 'Noto Sans KR';
+        font-weight: 700;
+        text-align: left;
+        line-height: 1;
+    }
+
+    .section5 .row .cell .part-4 {
+        padding: 15px 30px;
+        width: 280px;
+        height: calc(50% - 20px);
+    }
+
+    .section5 .row .cell .part-4 .text img {
+        position: relative;
+        left: 180px;
+        top: 20px;
+        opacity: 0;
+        transition: top .4s;
+    }
+
+    .section5 .row .cell .part-4:hover .text img {
+        top: -108px;
+        right: 10px;
+        opacity: 1;
+    }
+
+}
+
+
+
+@media (max-width:1160px) {
+
+    .section5 .irgrid {
+        margin: 20px auto 20px;
+        width: 1000px;
+        overflow: hidden;
+    }
+
+    .section5 .row .cell {
+        width: auto;
+        height: auto;
+        margin-left: 15px;
+    }
+
+    .section5 .row .cell div .text {
+        padding: 0;
+    }
+
+    .section5 .row .cell .part-1 {
+        padding: 38px 30px 0 30px;
+        width: 230px;
+        height: 400px;
+    }
+
+    .section5 .row .cell .part-2 {
+        padding: 38px 30px 0 30px;
+        width: 230px;
+        height: 400px;
+        margin-left: 15px;
+    }
+
+    .section5 .row .cell:nth-child(1) {
+        overflow: hidden;
+    }
+
+    .section5 .row .cell:nth-child(2) {
+        margin-left: 15px;
+    }
+
+    .section5 .row .cell:nth-child(3) {
+        margin-left: 15px;
+        width: 250px;
+        height: 400px;
+    }
+
+    .section5 .row .cell:nth-child(3) .part-4 {
+        margin-top: 20px;
+    }
+
+    .section5 .row .cell .part-3 {
+        padding: 12px 30px;
+        width: 250px;
+        height: calc(50% - 20px);
+    }
+
+    .section5 .row .cell .part-4 {
+        padding: 15px 30px;
+        width: 250px;
+        height: calc(50% - 20px);
+        overflow: hidden;
+    }
+
+    .section5 .row .cell .part-4 .text img {
+        position: relative;
+        left: 165px;
+        top: 20px;
+        opacity: 0;
+        transition: top .4s;
+    }
+
+    .section5 .row .cell .part-4:hover .text img {
+        top: -118px;
+        right: 10px;
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 770px) {
+
+    .section5 {
+        width: 100%;
+    }
+
+    .section5 .irgrid {
+        margin:
+            width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .section5 .row .cell {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    .section5 .row .cell div .text {
+        padding: 0;
+    }
+
+    .section5 .row .cell .part-1 {
+        padding: 25px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .section5 .row .cell .part-2 {
+        padding: 25px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .section5 .row .cell:nth-child(2) div .text {
+        width: 100%;
+        height: 240px;
+        margin-top: -30px;
+    }
+
+    .section5 .row .cell .part-2 .text .line-bar {
+        opacity: 0;
+    }
+
+    .section5 .row .cell .part-2 h3 {
+        font-size: 25px;
+        color: #222;
+        font-family: 'Metropolis-Bold', 'Noto Sans KR';
+        font-weight: 700;
+        text-align: left;
+        line-height: 1;
+        display: inline-block;
+    }
+
+    .section5 .row .cell .part-2 .stockNum {
+        font-size: 40px;
+        color: #f11a1a;
+        font-family: 'Metropolis-Light', 'Noto Sans KR';
+        font-weight: 400;
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    .section5 .row .cell .part-2 .more {
+        opacity: 0;
+    }
+
+
+    .section5 .row .cell .part-2 .info {
+        margin-top: 0px;
+    }
+    
+    .section5 .row .cell .part-2 .info .list{
+        width: 600px;
+    }
+
+    .section5 .row .cell .part-2 .info .list p {
+        font-size: 20px;
+    }
+
+
+    .section5 .row .cell .part-2 .info .list span {
+        font-size: 20px;
+    }
+
+
+
+    .section5 .row .cell:nth-child(1) {
+        overflow: hidden;
+    }
+
+    .section5 .row .cell:nth-child(2) {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .section5 .row .cell:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .section5 .row .cell:nth-child(3) .part-4 {
+        margin-top: 20px;
+    }
+
+
+    .section5 .row .cell .part-3 {
+        padding: 25px;
+        width: 45%;
+        height: 170px;
+        margin-top:20px;
+    }
+
+    .section5 .row .cell .part-4 {
+        padding: 25px;
+        width: 50%;
+        height: 200px;
+
+    }
+
+    .section5 .row .cell .part-4 .text img {
+       opacity: 0;
+    }
+
+    .section5 .row .cell .part-4:hover .text img {
+      opacity: 0;
+}
+    
+}
+
+
 
 
 /*5번째페이지 끝*/
@@ -2277,7 +2572,8 @@ body {
 .section6 {
     position: relative;
     width: 100%;
-    height: 222px;
+    height: 250px;
+    background-color: #fff;
 }
 
 
@@ -2428,6 +2724,3 @@ html[data-scrollify-index="3"] .header-box .logo > img:last-child {
     opacity: 1;
     transition: opacity 0s .3s;
 }
-
-
-
