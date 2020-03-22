@@ -402,7 +402,7 @@ html, body {
 
 .mobile-side-menu .side-box .side-footer-0{
     margin-top:20px;
-    margin-left:80px;
+    margin-left:50px;
 }
 
 .mobile-side-menu .side-box .side-footer-0 .cell{
@@ -427,7 +427,7 @@ html, body {
 
 .mobile-side-menu .side-box .side-footer{
     margin-top:40px;
-    margin-left:80px;
+    margin-left:50px;
 }
 
 .mobile-side-menu .side-box .main-menu > li ul{
@@ -503,12 +503,12 @@ html, body {
     display:inline-block;
     position:relative;
     top:20px;
-    left:-30px;
+    left:-22%;
     width:60px;
     height:60px;
     border-radius:50%;
     background-color:orange;
-    opacity:.8;
+    opacity:1;
     z-index: 99;
 }
 
@@ -896,14 +896,16 @@ html, body {
 
 .part-4>.head>ul>li>a{
     display:block;
-    padding:50px 23px;
+    padding:35px 23px;
     font-size:22px;
     font-weight:500;
     color:#333333;
+    border-right: 2px solid rgba(255,255,255,0.4);
 }
 
 .part-4>.head>ul>li.active>a{
     color:white;
+    border-right:0;
 }
 
 .part-4 .content > div {
@@ -1258,7 +1260,7 @@ section .row .footer-center .footer-center-text-2{
 }
 
 section .row .footer-right{
-    margin-right:350px;
+    margin-right:50px;
 }
 
 
