@@ -753,6 +753,52 @@ html, body {
     background-color:#fbdc34;
 }
 
+.list-box-1 .row .cell {
+    display:block;
+    transform:translateY(200%);
+    transition: transform .3s;
+}
+
+.list-box-1 .row.active .cell:nth-child(1) {
+    transition:transform 0.2s 0.2s;
+    transform:translateY(0);
+}
+
+.list-box-1 .row.active .cell:nth-child(2) {
+    transition:transform 0.2s 0.3s;
+    transform:translateY(0);
+}
+
+.list-box-1 .row.active .cell:nth-child(3) {
+    transition:transform 0.2s 0.4s;
+    transform:translateY(0);
+}
+
+.list-box-1 .row.active .cell:nth-child(4) {
+    transition:transform 0.2s 0.5s;
+    transform:translateY(0);
+}
+
+.list-box-1 .row.active .cell:nth-child(5) {
+    transition:transform 0.2s 0.6s;
+    transform:translateY(0);
+}
+
+.list-box-1 .row.active .cell:nth-child(6) {
+    transition:transform 0.2s 0.7s;
+    transform:translateY(0);
+}
+
+.list-box-1 .row.active .cell:nth-child(7) {
+    transition:transform 0.2s 0.8s;
+    transform:translateY(0);
+}
+
+.list-box-1 .row.active .cell:nth-child(8) {
+    transition:transform 0.2s 0.9s;
+    transform:translateY(0);
+}
+
 .list-box-1 .row .cell > img{
     position:absolute;
     top:50%;
