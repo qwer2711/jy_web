@@ -472,28 +472,41 @@ h4 {
 }
 
 .my-carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .veil-1 {
-    background-color: rgba(166, 131, 88, 0.60);
+    background-color: rgba(167,91,92,0.70);
 }
 
 .my-carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .veil-2 {
-    background-color: rgba(141, 20, 37, 0.60);
+    background-color: rgba(178,125,131,0.60);
 }
 
 .my-carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .veil-3 {
-    background-color: rgba(118, 77, 50, 0.65);
+    background-color: rgba(110,50,55,0.60);
 }
 
 .my-carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .veil-4 {
-    background-color: rgba(136, 80, 31, 0.5);
+    background-color: rgba(166,131,88,0.60);
 }
 
 .my-carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .veil-5 {
-    background-color: rgba(50, 112, 104, 0.5);
+    background-color: rgba(141,20,37,0.60);
 }
 
 .my-carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .veil-6 {
+    background-color:rgba(118,77,50,0.65);
+}
+
+.my-carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .veil-7 {
+    background-color: rgba(136, 80, 31, 0.5);
+}
+
+.my-carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .veil-8 {
+    background-color: rgba(50, 112, 104, 0.5);
+}
+
+.my-carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .veil-9 {
     background-color: rgba(25, 26, 33, 0.5);
 }
+
 
 
 .my-carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .txt-box {
@@ -633,6 +646,10 @@ h4 {
     margin-top: 130px;
 }
 
+.prod-box-1 > .menu-box-1{
+    margin-bottom: 30px;
+}
+
 .prod-box-1 > .menu-box-1 > ul > li > a {
     padding: 10px 120px;
     border-bottom: 2px solid #e6e6e6;
@@ -651,6 +668,7 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 .prod-box-1 > .my-carousel-box-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .img-box::after {
@@ -658,6 +676,24 @@ h4 {
     display: block;
     padding-top: 100%;
 }
+
+.prod-box-1 > .my-carousel-box-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .img-box:hover::before{
+    content:'자세히보기';
+    position:absolute;
+    top:50%;
+    left:50%;
+    padding:25px 50px;
+    transform:translatex(-50%)translatey(-50%);
+    background-color:#e66c91;
+    border: 1px solid white;
+    color:#fff;
+    font-weight:500;
+}
+
+.prod-box-1 > .my-carousel-box-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .img-box:hover::after{
+    background-color:rgba(242,242,242,0.5);
+}
+
 
 .prod-box-1 > .my-carousel-box-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item {
     text-align: center;
