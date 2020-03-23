@@ -2632,18 +2632,18 @@ body {
 
     .section5 .row .cell .part-3 {
         padding: 15px;
-        width: 36%;
+        width: 40%;
         height: 124px;
         overflow: hidden;
-        display: inline-block;
+        float: left;
 
     }
 
     .section5 .row .cell .part-4 {
         padding: 15px;
-        width: 36%;
+        width: 40%;
         height: 120px;
-        display: inline-block;
+        float: right;
         background-color: #b4d41b;
         border: 2px solid #b4d41b;
     }
@@ -2711,7 +2711,7 @@ body {
     }
 
     .section5 .row .cell:nth-child(3) {
-        width: 100%;
+        width:90%;
         height: auto;
         margin-left: 18px;
         margin-top: 10px;
