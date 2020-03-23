@@ -411,7 +411,8 @@ section .home .bg{
     left:35%;
     font-size:1.7rem;
     color: #e23c9f;
-    font-weight: 500;
+    font-weight: 700;
+    text-shadow: 5px 3px 3px rgba(226,60,159,0.4);
 }
 
 .about .left-box .left-content{
@@ -452,6 +453,27 @@ section .home .bg{
     background-color: #e23c9f;
     border-radius: 50%;
 }
+
+.about .left-box .keyword{
+    position: absolute;
+    top:70%;
+    left: 10%;
+}
+
+.about .left-box .keyword .word{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#e23c9f;
+}
+
+.about .left-box .keyword .word-content{
+    margin-top:25px;
+    color:#424347;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
 
 
 
