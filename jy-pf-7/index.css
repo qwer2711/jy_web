@@ -648,7 +648,7 @@ nav ul li a{
 
 .about .left-box .keyword{
     position: absolute;
-    top:70%;
+    top:65%;
     left: 10%;
 }
 
@@ -694,9 +694,14 @@ nav ul li a{
     position:absolute;
     width:auto;
     height:auto;
-    top:16%;
+    top:12%;
     left:5%;
 }
+
+.about .center-box .title-1 span{
+    margin-bottom:50px;
+}
+
 
 .about .center-box .title-1 .left-name > img{
     width:150px;
@@ -788,9 +793,47 @@ nav ul li a{
 
 .about .center-box .title-2{
     position:absolute;
-    top:55%;
+    top:52%;
     left:5%;
+    width:500px;
 }
+
+.about .center-box .title-2 .tit{
+    margin-top:50px;
+}
+
+.about .center-box .title-2 .tit .ttt{
+    margin-bottom:25px;
+}
+
+.about .center-box .title-2 .tit .ttt p1{
+    margin-bottom:25px;
+    display:block;
+    font-size:18px;
+    font-weight:500;
+    color:#585858;
+}
+
+.about .center-box .title-2 .tit-1{
+    width:250px;
+}
+
+.about .center-box .title-2 .tit-2{
+    width:250px;
+}
+
+.about .center-box .title-2 .tit ul li{
+    width:12px;
+    height:12px;
+    background-color:#f94eb6;
+    margin-right:14px;
+    border-radius:50%;
+}
+
+.about .center-box .title-2 .tit ul .color{
+    background-color:#dfdfdf;
+}
+
 
  .center-box .title-3{
     position:absolute;
@@ -801,6 +844,8 @@ nav ul li a{
 .center-box .title-3 .content{
     margin-top:50px;
     font-size:18px;
+    color:#585858;
+    font-weight:500;
 }
 
 .center-box .title-3 .content .ver-line{
@@ -815,9 +860,17 @@ nav ul li a{
     margin-top:10px;
 }
 
+.center-box .title-4{
+    position:absolute;
+    top:40%;
+    left:56%;
+}
+
 .center-box .title-4 .content{
     margin-top:50px;
     font-size:18px;
+    color:#585858;
+    font-weight:500;
 }
 
 .center-box .title-4 .content .ver-line{
@@ -828,9 +881,17 @@ nav ul li a{
     margin:0 30px;
 }
 
+.center-box .title-5{
+    position:absolute;
+    top:68%;
+    left:56%;
+}
+
 .center-box .title-5 .content{
     margin-top:50px;
     font-size:18px;
+    color:#585858;
+    font-weight:500;
 }
 
 .center-box .title-5 .content .ver-line{
@@ -842,19 +903,9 @@ nav ul li a{
 }
 
 
- .center-box .title-4{
-    position:absolute;
-    top:37%;
-    left:56%;
-}
+ 
 
- .center-box .title-5{
-    position:absolute;
-    top:65%;
-    left:56%;
-}
-
-
+ 
 
 
 
