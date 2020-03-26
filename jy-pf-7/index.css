@@ -1582,10 +1582,23 @@ section .home .bg {
     font-size:24px;
     color:rgba(0,0,0,0.4);
     font-weight:600;
+    border:1px solid rgba(0,0,0,0.4);
+    
+}
+
+.portfolio .right-box .part-5>.head>ul>li:last-child>a{
+    border-left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.portfolio .right-box .part-5>.head>ul>li:first-child>a{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .portfolio .right-box .part-5>.head>ul>li.active>a{
-    color:#1f4af8;
+    color:#e23c9f;
     font-weight:600;
 }
 
@@ -1853,6 +1866,309 @@ section .home .bg {
     transition:transform 0.3s 0.8s;
     transform:translateY(40%);
 }
+
+/*팝업창*/
+
+.popup-bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    display:none;
+}
+
+.popup-1{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%)translatey(-50%);
+    width:700px;
+    height:600px;
+    background-color:white;
+    display:none;
+    border-radius:20px;
+    border:5px solid #1f4af8;
+    
+}
+
+.popup-1 > .head > .btn-close{
+    position:relative;
+    top:0;
+    right:2%;
+    width:40px;
+    height:40px;
+}
+.popup-1 > .head > .btn-close:hover{
+     cursor:pointer;
+    transform:rotate(10deg);
+    
+}
+
+.popup-1 > .head > .btn-close::after, .popup-1 > .head > .btn-close::before{
+    content:"";
+    width:10%;
+    height:100%;
+    top:30%;
+    left:45%;
+    position:absolute;
+    background-color:#1f4af8;
+    transform:rotate(45deg);
+   
+}
+
+.popup-1 > .head > .btn-close::before{
+    transform:rotate(-45deg);
+}
+
+
+.popup-1 .popup-content{
+   padding:40px;
+}
+
+.popup-2{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%)translatey(-50%);
+    width:700px;
+    height:600px;
+    background-color:white;
+    display:none;
+    border-radius:20px;
+    border:5px solid #1f4af8;
+    
+}
+
+.popup-2 > .head > .btn-close{
+    position:relative;
+    top:0;
+    right:2%;
+    width:40px;
+    height:40px;
+}
+.popup-2 > .head > .btn-close:hover{
+     cursor:pointer;
+    transform:rotate(10deg);
+    
+}
+
+.popup-2 > .head > .btn-close::after, .popup-2 > .head > .btn-close::before{
+    content:"";
+    width:10%;
+    height:100%;
+    top:30%;
+    left:45%;
+    position:absolute;
+    background-color:#1f4af8;
+    transform:rotate(45deg);
+   
+}
+
+.popup-2 > .head > .btn-close::before{
+    transform:rotate(-45deg);
+}
+
+
+.popup-2 .popup-content{
+   padding:40px;
+}
+
+
+
+.popup-3{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%)translatey(-50%);
+    width:700px;
+    height:600px;
+    background-color:white;
+    display:none;
+    border-radius:20px;
+    border:5px solid #1f4af8;
+    
+}
+
+.popup-3 > .head > .btn-close{
+    position:relative;
+    top:0;
+    right:2%;
+    width:40px;
+    height:40px;
+}
+.popup-3 > .head > .btn-close:hover{
+     cursor:pointer;
+    transform:rotate(10deg);
+    
+}
+
+.popup-3 > .head > .btn-close::after, .popup-3 > .head > .btn-close::before{
+    content:"";
+    width:10%;
+    height:100%;
+    top:30%;
+    left:45%;
+    position:absolute;
+    background-color:#1f4af8;
+    transform:rotate(45deg);
+   
+}
+
+.popup-3 > .head > .btn-close::before{
+    transform:rotate(-45deg);
+}
+
+
+.popup-3 .popup-content{
+   padding:40px;
+}
+
+.popup-4{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%)translatey(-50%);
+    width:700px;
+    height:600px;
+    background-color:white;
+    display:none;
+    border-radius:20px;
+    border:5px solid #1f4af8;
+    
+}
+
+.popup-4 > .head > .btn-close{
+    position:relative;
+    top:0;
+    right:2%;
+    width:40px;
+    height:40px;
+}
+.popup-4 > .head > .btn-close:hover{
+     cursor:pointer;
+    transform:rotate(10deg);
+    
+}
+
+.popup-4 > .head > .btn-close::after, .popup-4 > .head > .btn-close::before{
+    content:"";
+    width:10%;
+    height:100%;
+    top:30%;
+    left:45%;
+    position:absolute;
+    background-color:#1f4af8;
+    transform:rotate(45deg);
+   
+}
+
+.popup-4 > .head > .btn-close::before{
+    transform:rotate(-45deg);
+}
+
+
+.popup-4 .popup-content{
+   padding:40px;
+}
+
+.popup-5{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%)translatey(-50%);
+    width:700px;
+    height:600px;
+    background-color:white;
+    display:none;
+    border-radius:20px;
+    border:5px solid #1f4af8;
+    
+}
+
+.popup-5 > .head > .btn-close{
+    position:relative;
+    top:0;
+    right:2%;
+    width:40px;
+    height:40px;
+}
+.popup-5 > .head > .btn-close:hover{
+     cursor:pointer;
+    transform:rotate(10deg);
+    
+}
+
+.popup-5 > .head > .btn-close::after, .popup-5 > .head > .btn-close::before{
+    content:"";
+    width:10%;
+    height:100%;
+    top:30%;
+    left:45%;
+    position:absolute;
+    background-color:#1f4af8;
+    transform:rotate(45deg);
+   
+}
+
+.popup-5 > .head > .btn-close::before{
+    transform:rotate(-45deg);
+}
+
+
+.popup-5 .popup-content{
+   padding:40px;
+}
+
+.popup-6{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%)translatey(-50%);
+    width:700px;
+    height:600px;
+    background-color:white;
+    display:none;
+    border-radius:20px;
+    border:5px solid #1f4af8;
+    
+}
+
+.popup-6 > .head > .btn-close{
+    position:relative;
+    top:0;
+    right:2%;
+    width:40px;
+    height:40px;
+}
+.popup-6 > .head > .btn-close:hover{
+     cursor:pointer;
+    transform:rotate(10deg);
+    
+}
+
+.popup-6 > .head > .btn-close::after, .popup-6 > .head > .btn-close::before{
+    content:"";
+    width:10%;
+    height:100%;
+    top:30%;
+    left:45%;
+    position:absolute;
+    background-color:#1f4af8;
+    transform:rotate(45deg);
+   
+}
+
+.popup-6> .head > .btn-close::before{
+    transform:rotate(-45deg);
+}
+
+
+.popup-6 .popup-content{
+   padding:40px;
+}
+
 
 
 

@@ -117,3 +117,75 @@ function ActiveOnVisible__checkAndActive() {
 }
 
 ActiveOnVisible__init();
+
+//팝업창1
+
+$('.list-box-1 .cell .url .btn2-1').click(function(){
+    $('.popup-1,.popup-bg').css('display','block');
+    $('html').addClass('no-scroll');
+});
+
+$('.popup-1 > .head > .btn-close').click(function(){
+    $('.popup-1,.popup-bg').css('display','none');
+    $('html').removeClass('no-scroll');
+});
+
+//팝업창2
+$('.list-box-1 .cell .url .btn2-2').click(function(){
+    $('.popup-2,.popup-bg').css('display','block');
+    $('html').addClass('no-scroll');
+});
+
+$('.popup-2 > .head > .btn-close').click(function(){
+    $('.popup-2,.popup-bg').css('display','none');
+    $('html').removeClass('no-scroll');
+});
+
+//팝업창3
+$('.list-box-1 .cell .url .btn2-3').click(function(){
+    $('.popup-3,.popup-bg').css('display','block');
+    $('html').addClass('no-scroll');
+});
+
+$('.popup-3 > .head > .btn-close').click(function(){
+    $('.popup-3,.popup-bg').css('display','none');
+    $('html').removeClass('no-scroll');
+});
+
+
+//팝업창4
+$('.list-box-1 .cell .url .btn2-4').click(function(){
+    $('.popup-4,.popup-bg').css('display','block');
+    $('html').addClass('no-scroll');
+});
+
+$('.popup-4 > .head > .btn-close').click(function(){
+    $('.popup-4,.popup-bg').css('display','none');
+    $('html').removeClass('no-scroll');
+});
+
+
+//팝업창5
+$('.list-box-1 .cell .url .btn2-5').click(function(){
+    $('.popup-5,.popup-bg').css('display','block');
+    $('html').addClass('no-scroll');
+});
+
+$('.popup-5 > .head > .btn-close').click(function(){
+    $('.popup-5,.popup-bg').css('display','none');
+    $('html').removeClass('no-scroll');
+});
+
+
+//팝업창6
+$('.list-box-1 .cell .url .btn2-6').click(function(){
+    $('.popup-6,.popup-bg').css('display','block');
+    $('html').addClass('no-scroll');
+});
+
+$('.popup-6 > .head > .btn-close').click(function(){
+    $('.popup-6,.popup-bg').css('display','none');
+    $('html').removeClass('no-scroll');
+});
+
+
