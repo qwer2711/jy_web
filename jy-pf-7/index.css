@@ -146,7 +146,7 @@ html, body {
 
 nav {
     position: fixed;
-    top: 95%;
+    top: 93%;
     right: 2%;
     background-color: #e23ca0;
     border-radius: 20px;
@@ -157,7 +157,7 @@ nav {
 }
 
 nav:hover {
-    top: 72%;
+    top: 66%;
 }
 
 nav ul span {
@@ -193,6 +193,24 @@ nav ul li:hover a {
 
 section {
     width: :100%;
+}
+
+.top-bar{
+    position:relative;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.top-bar .cell{
+    width:25%;
+    height:15px;
+    background-color:#e23c9f;
+}
+
+.top-bar .cell:last-child{
+    width:75%;
+    background-color:#1f4af8;
 }
 
 
@@ -2173,19 +2191,166 @@ section .home .bg {
 
 
 
-
-
-
-
-
-
-
-
+/*contact*/
 
 #a4 {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 1000px;
+    height:851px;
 }
+
+.contact .left-box{
+    position:relative;
+    top:0;
+    left:0;
+    width: 25%;
+    height:100%;
+    background-color: #f5f5f5;
+}
+
+.line-bar{
+    position:absolute;
+    top:7%;
+    width: 30%;
+    height: 5px;
+    background-color:#e23c9f;
+}
+
+.contact .left-box .left-title{
+    position:absolute;
+    top:5%;
+    left:35%;
+    font-size:1.7rem;
+    color: #e23c9f;
+    font-weight: 700;
+    text-shadow: 5px 3px 3px rgba(226,60,159,0.4);
+}
+
+.contact .left-box .left-content{
+    position: absolute;
+    top:25%;
+    left: 10%;
+    font-size: 1.4rem;
+    color:#424347;
+}
+
+.contact .left-box .left-content a {
+    display:block;
+    margin-top:30px;
+    position:relative;
+    top:0;
+    left:20px;
+    z-index:2;
+    padding:3px 10px;
+}
+
+.contact .left-box .left-content a.active{
+    font-weight:700;
+    color:#f838ab;
+}
+
+.contact .left-box .left-content a.active::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    transform:translatey(-50%);
+    left:-20px;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background-color:#585858;
+    z-index:1;
+}
+
+
+.contact .left-box .bottom-title {
+    position:absolute;
+    top:92%;
+    left:10%;
+    font-size:1.5rem;
+    font-weight:700;
+    color:#dad7d7;
+}
+
+.contact .right-box{
+    position:relative;
+    top:0;
+    left:0;
+    width:75%;
+    height:100%;
+
+}
+
+contact .right-box .content{
+    position: relative;
+    top:0;
+    left: :0;
+    border: 1px solid red;
+}
+
+.contact .right-box .content .ct-img{
+    width: 100%;
+    height: 100%;
+}
+
+.contact .right-box .content .ct-title{
+    position: absolute;
+    top:40px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 300px;
+}
+
+.contact .right-box .call{
+    position: absolute;
+    top:150px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.contact .right-box .call div{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact .right-box .call div:hover{
+    text-decoration: underline;
+}
+
+.contact .right-box .call div i{
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.contact .right-box .call div:first-child i{
+    transform: rotate(-10deg);
+}
+
+.contact .right-box .thx{
+    position: absolute;
+    top:75%;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    color: #625b5f;
+}
+
+.contact .footer{
+    position: absolute;
+    bottom:-130px;
+    left: 0;
+    width: 100%;
+    background-color: #625b5f;
+    padding: 30px 0;
+    text-align: center;
+    color: #dfdfdf;
+    font-weight: 300;
+}
+
+
+
+
