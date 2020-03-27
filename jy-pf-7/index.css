@@ -146,32 +146,33 @@ html, body {
 
 nav {
     position: fixed;
-    top: 93%;
+    top: 95%;
     right: 2%;
     background-color: #e23ca0;
     border-radius: 20px;
-    z-index: 10;
+    z-index: 20;
     box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.4);
     transition: top .5s;
     padding-bottom: 40px;
 }
 
 nav:hover {
-    top: 66%;
+    top:72%;
 }
 
 nav ul span {
-    padding: 10px 30px;
+    padding: 10px 40px;
     display: block;
     color: white;
     font-weight: 500;
     font-size: 20px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 nav ul span img {
     width: 20px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 nav ul li:first-child > a {
@@ -179,8 +180,9 @@ nav ul li:first-child > a {
     text-align: center;
 }
 
+
 nav ul li a {
-    padding: 10px 30px;
+    padding: 10px 40px;
     display: block;
     color: white;
     font-weight: 400;
@@ -205,12 +207,12 @@ section {
 .top-bar .cell{
     width:25%;
     height:15px;
-    background-color:#e23c9f;
+    background-color:#dfdfdf;
 }
 
 .top-bar .cell:last-child{
     width:75%;
-    background-color:#1f4af8;
+    background-color:#dfdfdf;
 }
 
 
@@ -616,29 +618,29 @@ section .home .bg {
     top: 0;
     left: 0;
     width: 100%;
-    height: 1000px;
+    height: 1200px;
 }
 
 .about .left-box {
     position: relative;
     top: 0;
     left: 0;
-    width: 25%;
+    width: 20%;
     height: 100%;
     background-color: #f5f5f5;
 }
 
 .line-bar {
     position: absolute;
-    top: 15%;
+    top: 12%;
     width: 30%;
     height: 5px;
     background-color: #e23c9f;
 }
 
-.about .left-box .left-title {
+.left-box .left-title {
     position: absolute;
-    top: 5%;
+    top:10.5%;
     left: 35%;
     font-size: 1.7rem;
     color: #e23c9f;
@@ -734,7 +736,7 @@ section .home .bg {
     width: auto;
     height: auto;
     top: 12%;
-    left: 5%;
+    left: 10%;
 }
 
 .about .center-box .title-1 span {
@@ -833,7 +835,7 @@ section .home .bg {
 .about .center-box .title-2 {
     position: absolute;
     top: 52%;
-    left: 5%;
+    left: 10%;
     width: 500px;
 }
 
@@ -877,7 +879,7 @@ section .home .bg {
 .center-box .title-3 {
     position: absolute;
     top: 12%;
-    left: 56%;
+    left: 58%;
 }
 
 .center-box .title-3 .content {
@@ -901,8 +903,8 @@ section .home .bg {
 
 .center-box .title-4 {
     position: absolute;
-    top: 40%;
-    left: 56%;
+    top: 38%;
+    left: 58%;
 }
 
 .center-box .title-4 .content {
@@ -922,8 +924,8 @@ section .home .bg {
 
 .center-box .title-5 {
     position: absolute;
-    top: 68%;
-    left: 56%;
+    top: 63%;
+    left: 58%;
 }
 
 .center-box .title-5 .content {
@@ -962,10 +964,6 @@ section .home .bg {
         font-size: 28px;
     }
 
-    .about .left-box .left-title {
-        top: 5.8%;
-        left: 35%;
-    }
 
 
     .about .left-box .keyword {
@@ -1053,11 +1051,6 @@ section .home .bg {
 
     .about .left-box .left-content p1 {
         font-size: 28px;
-    }
-
-    .about .left-box .left-title {
-        top: 5.8%;
-        left: 35%;
     }
 
 
@@ -1162,11 +1155,6 @@ section .home .bg {
 
     .about .left-box .left-content p1 {
         font-size: 28px;
-    }
-
-    .about .left-box .left-title {
-        top: 5.8%;
-        left: 35%;
     }
 
 
@@ -1484,35 +1472,18 @@ section .home .bg {
     top:0;
     left:0;
     width:100%;
-    height:1200px;  
+    height:1500px;  
 }
 
 .portfolio .left-box{
     position:relative;
     top:0;
     left:0;
-    width: 25%;
+    width: 20%;
     height:100%;
     background-color: #f5f5f5;
 }
 
-.line-bar{
-    position:absolute;
-    top:7%;
-    width: 30%;
-    height: 5px;
-    background-color:#e23c9f;
-}
-
-.portfolio .left-box .left-title{
-    position:absolute;
-    top:5%;
-    left:35%;
-    font-size:1.7rem;
-    color: #e23c9f;
-    font-weight: 700;
-    text-shadow: 5px 3px 3px rgba(226,60,159,0.4);
-}
 
 .portfolio .left-box .left-content{
     position: absolute;
@@ -1570,8 +1541,8 @@ section .home .bg {
 
 .portfolio .right-box .part-5{
     position:relative;
-    top:0;
-    left:0;
+    top:65px;
+    left:50px;
     width:100%;
 }
 
@@ -1581,12 +1552,12 @@ section .home .bg {
 
 .portfolio .right-box .part-5 > .head > ul{
     display:inline-block;
-    margin-top:40px;
-    margin-bottom:20px;
+    margin-top:70px;
+    margin-bottom:60px;
 }
 
 .portfolio .right-box .part-5>.head>ul>li{
-    width:280px;
+    width:260px;
 }
 
 .portfolio .right-box .part-5>.head>ul>li:first-child{
@@ -1597,10 +1568,10 @@ section .home .bg {
 .portfolio .right-box .part-5>.head>ul>li>a{
     display:block;
     padding:12px;
-    font-size:24px;
+    font-size:22px;
     color:rgba(0,0,0,0.4);
     font-weight:600;
-    border:1px solid rgba(0,0,0,0.4);
+    border:2px solid rgba(0,0,0,0.2);
     
 }
 
@@ -1618,6 +1589,7 @@ section .home .bg {
 .portfolio .right-box .part-5>.head>ul>li.active>a{
     color:#e23c9f;
     font-weight:600;
+    background-color: #f0f0f0;
 }
 
 .portfolio .right-box .part-5>.content>div {
@@ -2198,35 +2170,18 @@ section .home .bg {
     top: 0;
     left: 0;
     width: 100%;
-    height:851px;
+    height:1200px;
 }
 
 .contact .left-box{
     position:relative;
     top:0;
     left:0;
-    width: 25%;
+    width: 20%;
     height:100%;
     background-color: #f5f5f5;
 }
 
-.line-bar{
-    position:absolute;
-    top:7%;
-    width: 30%;
-    height: 5px;
-    background-color:#e23c9f;
-}
-
-.contact .left-box .left-title{
-    position:absolute;
-    top:5%;
-    left:35%;
-    font-size:1.7rem;
-    color: #e23c9f;
-    font-weight: 700;
-    text-shadow: 5px 3px 3px rgba(226,60,159,0.4);
-}
 
 .contact .left-box .left-content{
     position: absolute;
@@ -2267,7 +2222,7 @@ section .home .bg {
 
 .contact .left-box .bottom-title {
     position:absolute;
-    top:92%;
+    top:88%;
     left:10%;
     font-size:1.5rem;
     font-weight:700;
@@ -2278,26 +2233,24 @@ section .home .bg {
     position:relative;
     top:0;
     left:0;
-    width:75%;
-    height:100%;
-
+    width:80%;
 }
 
 contact .right-box .content{
     position: relative;
     top:0;
     left: :0;
-    border: 1px solid red;
 }
 
 .contact .right-box .content .ct-img{
     width: 100%;
-    height: 100%;
+    height:1160px;
+    z-index: -1;
 }
 
 .contact .right-box .content .ct-title{
     position: absolute;
-    top:40px;
+    top:110px;
     left:50%;
     transform: translateX(-50%);
     width: 300px;
@@ -2305,7 +2258,7 @@ contact .right-box .content{
 
 .contact .right-box .call{
     position: absolute;
-    top:150px;
+    top:250px;
     left:50%;
     transform: translateX(-50%);
 }
@@ -2332,24 +2285,23 @@ contact .right-box .content{
 
 .contact .right-box .thx{
     position: absolute;
-    top:75%;
+    top:80%;
     left:50%;
     transform: translateX(-50%);
     font-size: 25px;
     color: #625b5f;
 }
-
-.contact .footer{
-    position: absolute;
-    bottom:-130px;
+ .footer{
+    position: relative;
+    top:0;
     left: 0;
-    width: 100%;
-    background-color: #625b5f;
-    padding: 30px 0;
     text-align: center;
+    background-color: #625b5f;  
+    z-index:10;
+    padding:40px 0;
     color: #dfdfdf;
-    font-weight: 300;
 }
+
 
 
 
