@@ -2202,7 +2202,57 @@ section .home .bg {
 
 
 .popup-6 .popup-content{
+    position: relative;
+    top:0;
+    left: 0;
    padding:40px;
+}
+
+.popup-content .pop-title{
+    margin-top:30px;
+    margin-left: 30px;
+}
+
+
+.popup-content .pop-title span{
+    font-size: 25px;
+    font-weight: 500;
+   
+}
+
+.popup-content .pop-title .content{
+    font-size: 18px;
+    color: #585858;
+}
+
+.popup-content .pop-logo{
+    width: 200px;
+    height: 200px;
+}
+
+.popup-content .pop-1{
+    position: absolute;
+    top:45%;
+    left: 12%;
+}
+
+.popup-content .pop-1 .cell{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.popup-content .pop-1 .tit1{
+    background-color:#99ca3b;
+}
+
+.popup-content .pop-1 .tit2{
+    background-color:#52b8e9;
+}
+
+.popup-content .pop-1 .tit3{
+    background-color: #152b49;
 }
 
 
