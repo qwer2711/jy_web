@@ -353,11 +353,12 @@ html, body {
 .main-box .main-pocari .text-box .pocari-text {
     position: absolute;
     top: 45%;
-    right: -140px;
+    right: -155px;
     transform: rotate(90deg);
     display: inline-block;
     color: white;
-    font-size: 21px;
+    font-size: 600;
+    font-size: 20px;
     font-family: "NanumSquare", "san-serif";
     font-style: normal;
     -webkit-animation: aniMouse 5s ease-out infinite;
