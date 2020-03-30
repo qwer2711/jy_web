@@ -1728,6 +1728,7 @@ section .home .bg {
     padding-left:10px;
     padding-right:10px;
     cursor:pointer;
+    
 }
 
 
@@ -2479,6 +2480,11 @@ contact .right-box .content{
 
 nav:hover {
     top:65%;
+}
+    
+    .list-box-1 .cell {
+    margin-top:25px;
+    
 }
     
 }
