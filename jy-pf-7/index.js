@@ -18,28 +18,12 @@ $('.part-5>.head>ul>li').click(function(){
     $('.portfolio .left-box .left-content > a').eq(index).addClass('active');
 });
 
-$('.part-5 .my-1 > .owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
-    animateOut: 'fadeOut',
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },   
-    },
-    navText:['<img src="https://i.ibb.co/PQH1XMV/reco-arr-prev.png" alt="">','<img src="https://i.ibb.co/P54zKb2/reco-arr-next.png" alt="">'],
-});
 
 $('.part-5 .my-2 > .owl-carousel').owlCarousel({
     loop:true,
     margin:10,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
+    autoplay:false,
+    autoplayHoverPause:false,
     animateOut: 'fadeOut',
     nav:true,
     responsive:{

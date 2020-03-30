@@ -701,7 +701,7 @@ section .home .bg {
 .about .left-box .keyword .word-content {
     margin-top: 25px;
     color: #424347;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
@@ -2201,27 +2201,35 @@ section .home .bg {
 .popup-content .pop-title{
     position: absolute;
     top:25%;
-    left: 60%;
+    left: 50%;
     transform: translateX(-50%);
 }
 
 .popup-content .pop-title span:first-child{
     font-size: 20px;
     font-weight: 500;
+    margin-left: 10px;
     margin-bottom: 15px;
 }
 
 
 .popup-content .pop-title span{
-    font-size: 18px;
     display: block;  
-    text-align: left;
    
 }
 
-.popup-content .pop-title span:hover > a{
+.popup-content .pop-title span > a{
+    display: block;
+    font-size: 16px;
+    padding:10px 20px;
+    background-color:#1f4af8;
+    border-radius: 8px;
+    color:white;
+}
+
+.popup-content .pop-title span > a:hover{
     text-decoration: underline;
-    color: red;
+    background-color:#f838ab;
 }
 
 .popup-content .content-1{
@@ -2442,6 +2450,7 @@ contact .right-box .content{
     font-size: 25px;
     color: #818081;
     text-shadow: 2px 5px 1px rgba(0,0,0,0.1);
+    text-align: center;
 }
  .footer{
     position: relative;
@@ -2453,6 +2462,25 @@ contact .right-box .content{
     padding:40px 0;
     color: #dfdfdf;
 
+}
+
+@media ( max-width:1550px ){
+  nav {
+    position: fixed;
+    top: 93%;
+    right: 2%;
+    background-color: #e23ca0;
+    border-radius: 20px;
+    z-index: 20;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.4);
+    transition: top .5s;
+    padding-bottom: 40px;
+}
+
+nav:hover {
+    top:65%;
+}
+    
 }
 
 
