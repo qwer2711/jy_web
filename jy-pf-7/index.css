@@ -1935,10 +1935,14 @@ section .home .bg {
     right:2%;
     width:40px;
     height:40px;
+    border-radius: 15px;
+
 }
+
 .popup-1 > .head > .btn-close:hover{
-     cursor:pointer;
+    cursor:pointer;
     transform:rotate(10deg);
+
     
 }
 
@@ -1956,11 +1960,6 @@ section .home .bg {
 
 .popup-1 > .head > .btn-close::before{
     transform:rotate(-45deg);
-}
-
-
-.popup-1 .popup-content{
-   padding:40px;
 }
 
 .popup-2{
@@ -2006,10 +2005,6 @@ section .home .bg {
     transform:rotate(-45deg);
 }
 
-
-.popup-2 .popup-content{
-   padding:40px;
-}
 
 
 
@@ -2057,10 +2052,6 @@ section .home .bg {
 }
 
 
-.popup-3 .popup-content{
-   padding:40px;
-}
-
 .popup-4{
     position:fixed;
     top:50%;
@@ -2105,9 +2096,6 @@ section .home .bg {
 }
 
 
-.popup-4 .popup-content{
-   padding:40px;
-}
 
 .popup-5{
     position:fixed;
@@ -2153,10 +2141,6 @@ section .home .bg {
 }
 
 
-.popup-5 .popup-content{
-   padding:40px;
-}
-
 .popup-6{
     position:fixed;
     top:50%;
@@ -2201,61 +2185,129 @@ section .home .bg {
 }
 
 
-.popup-6 .popup-content{
+/*팝업창 내용*/
+
+.popup-content{
     position: relative;
     top:0;
     left: 0;
    padding:40px;
 }
+.popup-content .pop-logo{
+    width: 180px;
+    height: 180px;
+    margin-left: 20px;
+
+}
 
 .popup-content .pop-title{
-    margin-top:30px;
-    margin-left: 30px;
+    position: absolute;
+    top:25%;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+.popup-content .pop-title span:first-child{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
 
 .popup-content .pop-title span{
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 18px;
+    display: block;  
+    text-align: left;
    
 }
 
-.popup-content .pop-title .content{
+.popup-content .pop-title span:hover > a{
+    text-decoration: underline;
+    color: red;
+}
+
+.popup-content .content-1{
+    position: absolute;
+    top:75%;
+    left: auto;
     font-size: 18px;
     color: #585858;
+    margin-top:30px;
+    margin-left: 30px;
 }
 
-.popup-content .pop-logo{
-    width: 200px;
-    height: 200px;
-}
-
-.popup-content .pop-1{
+.popup-content .content-2{
     position: absolute;
-    top:45%;
-    left: 12%;
+    top:90%;
+    font-size: 18px;
+    color: #585858;
+    margin-top:80px;
+    margin-left: 30px;
 }
 
-.popup-content .pop-1 .cell{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-right: 10px;
+.popup-content .content-2 .ttt{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #585858;
+    position: relative;
 }
 
-.popup-content .pop-1 .tit1{
-    background-color:#99ca3b;
+.popup-content .content-2 .ttt::after{
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width:110px;
+    height: 10px;
+    background-color: #d7f4a1;
+    z-index: -1;
 }
 
-.popup-content .pop-1 .tit2{
-    background-color:#52b8e9;
+
+
+.popup-content .content-2 .too{
+    margin-bottom: 10px;
 }
 
-.popup-content .pop-1 .tit3{
-    background-color: #152b49;
+.popdown .content-1{
+    position: absolute;
+    top:70%;
+    left: auto;
+    font-size: 17px;
 }
 
+.popdown .content-2{
+    position: absolute;
+    top:85%;
+    font-size: 17px;
+    color: #585858;
+    margin-top:80px;
+    margin-left: 30px;
+}
 
+.popdown .content-2 .ttt{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+.popdown .content-2 .ttt::after{
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width:195px;
+    height: 10px;
+    background-color: #d7f4a1;
+    z-index: -1;
+}
+
+.popdown .content-2 .too{
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
 
 
 
