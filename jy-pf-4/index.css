@@ -668,12 +668,6 @@ html, body {
     ;
 }
 
-.pocari-girl .my-carousel-1::before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-}
-
 .pocari-girl .my-carousel-1 .my-1 {
     position: absolute !important;
     top: 0;

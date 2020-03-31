@@ -2433,7 +2433,7 @@ contact .right-box .content{
     left:50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    color: #818081;
+    color: #000;
     text-shadow: 2px 5px 1px rgba(0,0,0,0.1);
 }
 
@@ -2469,6 +2469,18 @@ contact .right-box .content{
     text-shadow: 2px 5px 1px rgba(0,0,0,0.1);
     text-align: center;
 }
+
+
+.response-1{
+    padding: 3px 5px;
+    border-radius:10px;
+    font-size: 12px;
+    border:2px solid #439de6;
+    color: #439de6;
+    margin-left: 10px;
+}
+
+
  .footer{
     position: relative;
     top:0;

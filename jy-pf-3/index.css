@@ -1990,6 +1990,13 @@ body {
     }
 }
 
+@media (max-width:470px){
+     .section4 .newArea {
+        padding-top: 280px;
+        width: atuo;
+    }
+}
+
 /*4번째페이지 끝*/
 
 
