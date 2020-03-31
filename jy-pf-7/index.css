@@ -817,7 +817,7 @@ section .home .bg {
 .about .center-box .title-1 .right-name ul li:last-child p0 {
     font-weight: 600;
     color: #1f4af8;
-    margin-right: 12px;
+    margin-right: 8px;
 }
 
 .about .center-box .title-1 .right-name ul li p2 {
@@ -831,7 +831,7 @@ section .home .bg {
 }
 
 .about .center-box .title-1 .right-name ul li p4 {
-    margin-left: 7px;
+    margin-left: 10px;
     letter-spacing: -0.5px;
 }
 
