@@ -9,6 +9,11 @@ html {
 
 
 /* 노말라이즈 */
+
+html.no-scroll{
+    overflow-y:hidden;
+}
+
 body,
 ul,
 li,
@@ -1619,7 +1624,121 @@ section .home .bg {
     margin:0 auto;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
+
+.portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn1{
+    position: absolute;
+    top:35%;
+    left: 4%;
+    border: 3px solid #585858;
+    padding: 15px 35px;
+    border-radius: 10px;
+    z-index: 2;
+    font-size: 18px;
+    background-color:white;
+    color: #585858;
+}
+
+
+
+.portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn1:hover{
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn2{
+    position: absolute;
+    top:35%;
+    left: 4%;
+    border: 3px solid #585858;
+    padding: 15px 35px;
+    border-radius: 10px;
+    z-index: 2;
+    font-size: 18px;
+    background-color:white;
+    color: #585858;
+}
+
+
+
+.portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn2:hover{
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn3{
+    position: absolute;
+    top:35%;
+    left: 4%;
+    border: 3px solid #585858;
+    padding: 15px 35px;
+    border-radius: 10px;
+    z-index: 2;
+    font-size: 18px;
+    background-color:white;
+    color: #585858;
+}
+
+
+
+.portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn3:hover{
+    text-decoration: underline;
+    font-weight: 500;
+}
+.portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn4{
+    position: absolute;
+    top:35%;
+    left: 4%;
+    border: 3px solid #585858;
+    padding: 15px 35px;
+    border-radius: 10px;
+    z-index: 2;
+    font-size: 18px;
+    background-color:white;
+    color: #585858;
+}
+
+
+
+.portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn4:hover{
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn5{
+    position: absolute;
+    top:35%;
+    left: 4%;
+    border: 3px solid #585858;
+    padding: 15px 35px;
+    border-radius: 10px;
+    z-index: 2;
+    font-size: 18px;
+    background-color:white;
+    color: #585858;
+}
+
+
+
+.portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn5:hover{
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+
+
+.portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item:hover > .hover::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+
 
 /*좌우버튼*/
 .portfolio .right-box .content .my-2 > .owl-carousel > .owl-nav > div[class*="owl-"] {
@@ -1921,6 +2040,7 @@ section .home .bg {
     height:100%;
     background-color:rgba(0,0,0,0.7);
     display:none;
+    z-index: 90;
 }
 
 .popup-1{
@@ -1934,7 +2054,7 @@ section .home .bg {
     display:none;
     border-radius:20px;
     border:5px solid #1f4af8;
-    
+    z-index: 100; 
 }
 
 .popup-1 > .head > .btn-close{
@@ -1981,7 +2101,7 @@ section .home .bg {
     display:none;
     border-radius:20px;
     border:5px solid #1f4af8;
-    
+    z-index: 100; 
 }
 
 .popup-2 > .head > .btn-close{
@@ -2027,7 +2147,7 @@ section .home .bg {
     display:none;
     border-radius:20px;
     border:5px solid #1f4af8;
-    
+    z-index: 100; 
 }
 
 .popup-3 > .head > .btn-close{
@@ -2071,7 +2191,7 @@ section .home .bg {
     display:none;
     border-radius:20px;
     border:5px solid #1f4af8;
-    
+    z-index: 100; 
 }
 
 .popup-4 > .head > .btn-close{
@@ -2116,7 +2236,7 @@ section .home .bg {
     display:none;
     border-radius:20px;
     border:5px solid #1f4af8;
-    
+    z-index: 100; 
 }
 
 .popup-5 > .head > .btn-close{
@@ -2160,7 +2280,7 @@ section .home .bg {
     display:none;
     border-radius:20px;
     border:5px solid #1f4af8;
-    
+    z-index: 100; 
 }
 
 .popup-6 > .head > .btn-close{
@@ -2190,6 +2310,331 @@ section .home .bg {
 .popup-6> .head > .btn-close::before{
     transform:rotate(-45deg);
 }
+
+.popup-7{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%)translatey(-50%);
+    width:auto;
+    height:auto;
+    display:none;
+    z-index: 100;
+}
+.popup-7 img{
+  width: 810px
+}
+
+.popup-7 > .head > .btn-close{
+    position:relative;
+    top:40px;
+    left:8%;
+    width:40px;
+    height:40px;
+    background-color: rgba(0,0,0,0.4);
+}
+.popup-7 > .head > .btn-close:hover{
+     cursor:pointer;
+    transform:rotate(10deg);
+}
+
+.popup-7 > .head > .btn-close::after, .popup-7 > .head > .btn-close::before{
+    content:"";
+    width:10%;
+    height:100%;
+    top:0%;
+    left:45%;
+    position:absolute;
+    background-color:#fff;
+    transform:rotate(45deg);
+   
+}
+
+.popup-7> .head > .btn-close::before{
+    transform:rotate(-45deg);
+}
+
+.popup-8{
+    position:fixed;
+    top:48.5%;
+    left:50%;
+    transform:translatex(-50%)translatey(-50%);
+    width:auto;
+    height:auto;
+    display:none;
+    z-index: 100;
+}
+.popup-8 img{
+  width: 670px
+}
+
+.popup-8 > .head > .btn-close{
+    position:relative;
+    top:40px;
+    left:8%;
+    width:40px;
+    height:40px;
+    background-color: rgba(0,0,0,0.4);
+}
+.popup-8 > .head > .btn-close:hover{
+     cursor:pointer;
+    transform:rotate(10deg);
+}
+
+.popup-8 > .head > .btn-close::after, .popup-8 > .head > .btn-close::before{
+    content:"";
+    width:10%;
+    height:100%;
+    top:0%;
+    left:45%;
+    position:absolute;
+    background-color:#fff;
+    transform:rotate(45deg);
+   
+}
+
+.popup-8> .head > .btn-close::before{
+    transform:rotate(-45deg);
+}
+
+.popup-9{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    display:none;
+    z-index: 100;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.popup-9 img{
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+      
+}
+
+.popup-9 > .head > .btn-close{
+    position:relative;
+    top:40px;
+    left:8%;
+    width:40px;
+    height:40px;
+    background-color: rgba(0,0,0,0.4);
+}
+.popup-9 > .head > .btn-close:hover{
+     cursor:pointer;
+    transform:rotate(10deg);
+}
+
+.popup-9 > .head > .btn-close::after, .popup-9 > .head > .btn-close::before{
+    content:"";
+    width:10%;
+    height:100%;
+    top:0%;
+    left:45%;
+    position:absolute;
+    background-color:#fff;
+    transform:rotate(45deg);
+   
+}
+
+.popup-9> .head > .btn-close::before{
+    transform:rotate(-45deg);
+}
+
+.popup-10{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translatex(-50%)translatey(-50%);
+    width:auto;
+    height:auto;
+    display:none;
+    z-index: 100;
+}
+.popup-10 img{
+  width: 810px
+}
+
+.popup-10 > .head > .btn-close{
+    position:relative;
+    top:40px;
+    left:8%;
+    width:40px;
+    height:40px;
+    background-color: rgba(0,0,0,0.4);
+}
+.popup-10 > .head > .btn-close:hover{
+     cursor:pointer;
+    transform:rotate(10deg);
+}
+
+.popup-10 > .head > .btn-close::after, .popup-10 > .head > .btn-close::before{
+    content:"";
+    width:10%;
+    height:100%;
+    top:0%;
+    left:45%;
+    position:absolute;
+    background-color:#fff;
+    transform:rotate(45deg);
+   
+}
+
+.popup-10> .head > .btn-close::before{
+    transform:rotate(-45deg);
+}
+
+.popup-11{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    display:none;
+    z-index: 100;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.popup-11 img{
+  width: 810px;
+    display: block;
+    margin:0 auto;
+}
+
+.popup-11 > .head > .btn-close{
+    position:relative;
+    top:40px;
+    left:8%;
+    width:40px;
+    height:40px;
+    background-color: rgba(0,0,0,0.4);
+}
+.popup-11 > .head > .btn-close:hover{
+     cursor:pointer;
+    transform:rotate(10deg);
+}
+
+.popup-11 > .head > .btn-close::after, .popup-11 > .head > .btn-close::before{
+    content:"";
+    width:10%;
+    height:100%;
+    top:0%;
+    left:45%;
+    position:absolute;
+    background-color:#fff;
+    transform:rotate(45deg);
+   
+}
+
+.popup-11> .head > .btn-close::before{
+    transform:rotate(-45deg);
+}
+
+
+
+
+/*popup10 슬라이드*/
+
+.slider-2 {
+    width:750px;
+    height:750px;
+    position:relative;
+}
+
+.slider-2 .slides > div {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-position:center;
+    /* 이미지를 최대한 안짤리게 한다. */
+    background-size:cover;
+    /* 배경 반복 금지 */
+    background-repeat:no-repeat;
+    opacity:0;
+    transition: opacity 0.5s;
+}
+
+.slider-2 .slides > div.active {
+    opacity:1;
+}
+
+@media ( max-width:700px ) {
+    .slider-2 {
+        height:300px;
+    }
+}
+
+.slider-2 .page-nav {
+    position:absolute;
+    width:100%;
+    text-align:center;
+    bottom:0;
+    left:0;
+}
+
+.slider-2 .page-nav > div {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    background-color:rgba(255,255,255,0.5);
+    border-radius:2px;
+    cursor:pointer;
+}
+
+.slider-2 .page-nav > div.active {
+    background-color:rgba(255,255,255,1);
+}
+
+.slider-2>.side-btns>div{
+    position:absolute;
+    top:0;
+    left:0;
+    width:30%;
+    height:100%;
+    cursor:pointer;
+    z-index:10;
+
+}
+
+.slider-2>.side-btns>div>span:active{
+    transform:translatey(-40%);
+}
+.slider-2>.side-btns>div:last-child{
+    left:auto;
+    right:0;
+}
+
+.slider-2>.side-btns>div>span{
+    position:absolute;
+    top:50%;
+    transform:translatey(-50%);
+    left:inherit;
+    right:inherit;
+    width:70px;
+    height:70px;
+    background-color:rgba(255,255,255,0.4);
+    border-radius:100%;
+    margin:0 10px;
+}
+.slider-2>.side-btns>div>span > i{
+    position:absolute;
+    top:50%;
+    left:50%;
+    font-size:3rem;
+    color:rgba(0,0,0,0.4);
+    transform:translateX(-70%) translateY(-50%);
+}
+
+.slider-2>.side-btns>div:last-child>span > i {
+    transform:translateX(-20%) translateY(-50%);
+}
+
+
 
 
 /*팝업창 내용*/
@@ -2323,6 +2768,7 @@ section .home .bg {
     margin-bottom: 10px;
     white-space: nowrap;
 }
+
 
 
 
@@ -2561,5 +3007,7 @@ nav:hover {
 
 
 
-
+html.no-scroll, html.no-scroll > body {
+    overflow: hidden;
+}
 
