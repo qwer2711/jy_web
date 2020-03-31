@@ -1487,8 +1487,8 @@ section .home .bg {
     position: absolute;
     top:15%;
     left: 10%;
-    font-size: 1.1rem;
-    color:#424347;
+    font-size: 1.3rem;
+    color: #818081;
 }
 
 
@@ -1736,7 +1736,7 @@ section .home .bg {
     padding-left:10px;
     padding-right:10px;
     cursor:pointer;
-    
+    margin-top:15px;s
 }
 
 
@@ -2500,7 +2500,7 @@ contact .right-box .content{
     right: 2%;
     background-color: #e23ca0;
     border-radius: 20px;
-    z-index: 20;
+    z-index: 20; .list-box-1 .cell
     box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.4);
     transition: top .5s;
     padding-bottom: 40px;

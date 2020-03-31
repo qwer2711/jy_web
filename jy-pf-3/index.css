@@ -232,6 +232,7 @@ body {
     z-index: 100;
     width: 20vw;
     height: 20vh;
+    cursor: pointer;
 
 }
 
