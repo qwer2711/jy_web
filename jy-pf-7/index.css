@@ -1645,6 +1645,8 @@ section .home .bg {
 .portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn1:hover{
     text-decoration: underline;
     font-weight: 500;
+    background-color:rgba(0,0,0,0.5);
+    color: white;
 }
 
 .portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn2{
@@ -1665,6 +1667,8 @@ section .home .bg {
 .portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn2:hover{
     text-decoration: underline;
     font-weight: 500;
+    background-color:rgba(0,0,0,0.5);
+    color: white;
 }
 
 .portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn3{
@@ -1685,6 +1689,8 @@ section .home .bg {
 .portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn3:hover{
     text-decoration: underline;
     font-weight: 500;
+    background-color:rgba(0,0,0,0.5);
+    color: white;
 }
 .portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn4{
     position: absolute;
@@ -1704,6 +1710,8 @@ section .home .bg {
 .portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn4:hover{
     text-decoration: underline;
     font-weight: 500;
+    background-color:rgba(0,0,0,0.5);
+    color: white;
 }
 
 .portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn5{
@@ -1724,18 +1732,8 @@ section .home .bg {
 .portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .hover .my-btn5:hover{
     text-decoration: underline;
     font-weight: 500;
-}
-
-
-
-.portfolio .right-box .content .my-2 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item:hover > .hover::after{
-    content: '';
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background-color:rgba(0,0,0,0.5);
+    color: white;
 }
 
 
