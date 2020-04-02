@@ -193,7 +193,7 @@ nav ul li a {
     display: block;
     color: white;
     font-weight: 400;
-    font-size: 20px;
+    -ms-font-size: 20px;
 }
 
 nav ul li:hover a {
@@ -243,7 +243,7 @@ section .home .menu {
 section .home ul li a {
     position: relative;
     padding: 15px 40px;
-    font-size: 20px;
+    -ms-font-size: 20px;
     color: white;
     z-index: 5;
 }
@@ -330,7 +330,7 @@ section .home .main-title {
     left: 50%;
     transform: translatex(-50%);
     width: 60px;
-    font-size: 15px;
+    -ms-font-size: 15px;
     color: #fff;
     letter-spacing: 0px;
     font-weight: 500;
@@ -355,7 +355,7 @@ section .home .circle .text {
     top: 45%;
     left: 50%;
     transform: translatex(-50%)translatey(-50%);
-    font-size: 23px;
+    -ms-font-size: 23px;
     font-weight: 500;
     color: white;
     z-index: 2;
@@ -391,7 +391,7 @@ section .home .bg {
     }
 
     section .home .circle .text {
-        font-size: 18px;
+        -ms-font-size: 18px;
     }
 
     section .home .circle .line {
@@ -413,7 +413,7 @@ section .home .bg {
     }
 
     section .home .circle .text {
-        font-size: 17px;
+        -ms-font-size: 17px;
     }
 
     section .home .circle .line {
@@ -429,7 +429,7 @@ section .home .bg {
 
     section .home ul li a {
         padding: 15px 22px;
-        font-size: 18px;
+        -ms-font-size: 18px;
     }
 
 
@@ -443,7 +443,7 @@ section .home .bg {
     }
 
     section .home .circle .text {
-        font-size: 14px;
+        -ms-font-size: 14px;
     }
 
     section .home .circle .line {
@@ -460,7 +460,7 @@ section .home .bg {
 
     section .home ul li a {
         padding: 15px 18px;
-        font-size: 18px;
+        -ms-font-size: 18px;
     }
 
 
@@ -479,7 +479,7 @@ section .home .bg {
     }
 
     section .home .circle .text {
-        font-size: 14px;
+        -ms-font-size: 14px;
     }
 
     section .home .circle .line {
@@ -500,7 +500,7 @@ section .home .bg {
 @media (max-width:450px) {
     section .home ul li a {
         padding: 15px 13px;
-        font-size: 17px;
+        -ms-font-size: 17px;
     }
 
 
@@ -520,7 +520,7 @@ section .home .bg {
     }
 
     section .home .circle .text {
-        font-size: 14px;
+        -ms-font-size: 14px;
     }
 
     section .home .circle .line {
@@ -541,7 +541,7 @@ section .home .bg {
 @media (max-width:380px) {
     section .home ul li a {
         padding: 15px 8px;
-        font-size: 15px;
+        -ms-font-size: 15px;
     }
 
 
@@ -561,7 +561,7 @@ section .home .bg {
     }
 
     section .home .circle .text {
-        font-size: 14px;
+        -ms-font-size: 14px;
     }
 
     section .home .circle .line {
@@ -593,7 +593,7 @@ section .home .bg {
         display: block;
         color: white;
         font-weight: 500;
-        font-size: 15px;
+        -ms-font-size: 15px;
         text-align: center;
     }
 
@@ -612,7 +612,7 @@ section .home .bg {
         display: block;
         color: white;
         font-weight: 400;
-        font-size: 15px;
+        -ms-font-size: 15px;
     }
 
 
@@ -649,7 +649,7 @@ section .home .bg {
     position: absolute;
     top:10.5%;
     left: 35%;
-    font-size: 1.7rem;
+    -ms-font-size: 1.7rem;
     color: #e23c9f;
     font-weight: 700;
     text-shadow: 5px 3px 3px rgba(226, 60, 159, 0.4);
@@ -659,7 +659,7 @@ section .home .bg {
     position: absolute;
     top: 35%;
     left: 10%;
-    font-size: 2rem;
+    -ms-font-size: 2rem;
     color: #424347;
     white-space: nowrap;
 }
@@ -679,7 +679,7 @@ section .home .bg {
     left: 0;
     color: #e23c9f;
     font-weight: 600;
-    font-size: 2.2rem;
+    -ms-font-size: 2.2rem;
 }
 
 .about .left-box .left-content p1::after {
@@ -701,7 +701,7 @@ section .home .bg {
 }
 
 .about .left-box .keyword .word {
-    font-size: 1.5rem;
+    -ms-font-size: 1.5rem;
     font-weight: 600;
     color: #e23c9f;
 }
@@ -717,7 +717,7 @@ section .home .bg {
     position: absolute;
     top: 92%;
     left: 10%;
-    font-size: 1.5rem;
+    -ms-font-size: 1.5rem;
     font-weight: 700;
     color: #dad7d7;
 }
@@ -732,7 +732,7 @@ section .home .bg {
 }
 
 .about .center-box .tet span {
-    font-size: 1.3rem;
+    -ms-font-size: 1.3rem;
     font-weight: 600;
     color: #1f4af8;
     display: block;
@@ -765,14 +765,14 @@ section .home .bg {
 }
 
 .about .center-box .title-1 .name p1 {
-    font-size: 20px;
+    -ms-font-size: 20px;
     padding-right: 12px;
     font-weight: 500;
 
 }
 
 .about .center-box .title-1 .name p2 {
-    font-size: 14px;
+    -ms-font-size: 14px;
     margin-left: -10px;
 }
 
@@ -808,7 +808,7 @@ section .home .bg {
 
 .about .center-box .title-1 .right-name ul li:first-child {
     font-weight: 600;
-    font-size: 18px;
+    -ms-font-size: 18px;
 }
 
 .about .center-box .title-1 .right-name ul li p1 {
@@ -857,7 +857,7 @@ section .home .bg {
 .about .center-box .title-2 .tit .ttt p1 {
     margin-bottom: 25px;
     display: block;
-    font-size: 18px;
+    -ms-font-size: 18px;
     font-weight: 500;
     color: #585858;
 }
@@ -891,7 +891,7 @@ section .home .bg {
 
 .center-box .title-3 .content {
     margin-top: 50px;
-    font-size: 18px;
+    -ms-font-size: 18px;
     color: #585858;
     font-weight: 500;
 }
@@ -916,7 +916,7 @@ section .home .bg {
 
 .center-box .title-4 .content {
     margin-top: 50px;
-    font-size: 18px;
+    -ms-font-size: 18px;
     color: #585858;
     font-weight: 500;
 }
@@ -937,7 +937,7 @@ section .home .bg {
 
 .center-box .title-5 .content {
     margin-top: 50px;
-    font-size: 18px;
+    -ms-font-size: 18px;
     color: #585858;
     font-weight: 500;
 }
@@ -968,7 +968,7 @@ section .home .bg {
     }
 
     .about .left-box .left-content p1 {
-        font-size: 28px;
+        -ms-font-size: 28px;
     }
 
 
@@ -980,7 +980,7 @@ section .home .bg {
     }
 
     .about .left-box .keyword .word-content {
-        font-size: 14px;
+        -ms-font-size: 14px;
     }
 
 
@@ -1053,11 +1053,11 @@ section .home .bg {
 
 
     .about .left-box .left-content {
-        font-size: 1.6rem;
+        -ms-font-size: 1.6rem;
     }
 
     .about .left-box .left-content p1 {
-        font-size: 28px;
+        -ms-font-size: 28px;
     }
 
 
@@ -1068,7 +1068,7 @@ section .home .bg {
     }
 
     .about .left-box .keyword .word-content {
-        font-size: 14px;
+        -ms-font-size: 14px;
     }
 
 
@@ -1091,7 +1091,7 @@ section .home .bg {
 
     .about .center-box .title-1 .right-name ul li {
         font-weight: 600;
-        font-size: 14px;
+        -ms-font-size: 14px;
     }
 
     .about .center-box .title-2 {
@@ -1157,11 +1157,11 @@ section .home .bg {
 
 
     .about .left-box .left-content {
-        font-size: 1.6rem;
+        -ms-font-size: 1.6rem;
     }
 
     .about .left-box .left-content p1 {
-        font-size: 28px;
+        -ms-font-size: 28px;
     }
 
 
@@ -1172,7 +1172,7 @@ section .home .bg {
     }
 
     .about .left-box .keyword .word-content {
-        font-size: 14px;
+        -ms-font-size: 14px;
     }
 
 
@@ -1199,7 +1199,7 @@ section .home .bg {
 
     .about .center-box .title-1 .right-name ul li {
         font-weight: 600;
-        font-size: 14px;
+        -ms-font-size: 14px;
     }
 
     .about .center-box .title-2 {
@@ -1245,19 +1245,19 @@ section .home .bg {
 
     .center-box .title-3 .content {
         margin-top: 50px;
-        font-size: 15px;
+        -ms-font-size: 15px;
 
     }
 
     .center-box .title-4 .content {
         margin-top: 50px;
-        font-size: 15px;
+        -ms-font-size: 15px;
 
     }
 
     .center-box .title-5 .content {
         margin-top: 50px;
-        font-size: 15px;
+        -ms-font-size: 15px;
 
     }
 
@@ -1306,7 +1306,7 @@ section .home .bg {
 
     .about .center-box .title-1 .right-name ul li {
         font-weight: 600;
-        font-size: 14px;
+        -ms-font-size: 14px;
     }
     
     .about .center-box .title-1 .right-name ul li:first-child {
@@ -1314,23 +1314,23 @@ section .home .bg {
 }
      .about .center-box .title-1 .right-name ul li p0 {
     font-weight: 600;
-    font-size: 17px;
+    -ms-font-size: 17px;
 }
     .about .center-box .title-1 .right-name ul li p1 {
     font-weight: 600;
-    font-size: 17px;
+    -ms-font-size: 17px;
 }
     
      .about .center-box .title-1 .right-name ul li p2 {
-    font-size: 17px;
+    -ms-font-size: 17px;
 }
     
      .about .center-box .title-1 .right-name ul li p3 {
-    font-size: 17px;
+    -ms-font-size: 17px;
 }
     
      .about .center-box .title-1 .right-name ul li p4 {
-    font-size: 17px;
+    -ms-font-size: 17px;
 }
 
     .about .center-box .title-2 {
@@ -1397,7 +1397,7 @@ section .home .bg {
     .center-box .title-3 .content {
         width: 100%;
         margin-top: 50px;
-        font-size: 13px;
+        -ms-font-size: 13px;
         white-space: nowrap;
 
     }
@@ -1414,7 +1414,7 @@ section .home .bg {
     .center-box .title-4 .content {
         width: 100%;
         margin-top: 50px;
-        font-size: 13px;
+        -ms-font-size: 13px;
 
     }
     
@@ -1428,7 +1428,7 @@ section .home .bg {
 
     .center-box .title-5 .content {
         margin-top: 50px;
-        font-size: 13px;
+        -ms-font-size: 13px;
 
     }
     
@@ -1583,7 +1583,7 @@ section .home .bg {
 .portfolio .right-box .part-5>.head>ul>li>a{
     display:block;
     padding:12px;
-    font-size:22px;
+    -ms-font-size:22px;
     color:rgba(0,0,0,0.4);
     font-weight:600;
     border:2px solid rgba(0,0,0,0.2);
@@ -1638,7 +1638,7 @@ section .home .bg {
     padding: 15px 35px;
     border-radius: 10px;
     z-index: 2;
-    font-size: 18px;
+    -ms-font-size: 18px;
     background-color:white;
     color: #585858;
 }
@@ -1660,7 +1660,7 @@ section .home .bg {
     padding: 15px 35px;
     border-radius: 10px;
     z-index: 2;
-    font-size: 18px;
+    -ms-font-size: 18px;
     background-color:white;
     color: #585858;
 }
@@ -1682,7 +1682,7 @@ section .home .bg {
     padding: 15px 35px;
     border-radius: 10px;
     z-index: 2;
-    font-size: 18px;
+    -ms-font-size: 18px;
     background-color:white;
     color: #585858;
 }
@@ -1703,7 +1703,7 @@ section .home .bg {
     padding: 15px 35px;
     border-radius: 10px;
     z-index: 2;
-    font-size: 18px;
+    -ms-font-size: 18px;
     background-color:white;
     color: #585858;
 }
@@ -1725,7 +1725,7 @@ section .home .bg {
     padding: 15px 35px;
     border-radius: 10px;
     z-index: 2;
-    font-size: 18px;
+    -ms-font-size: 18px;
     background-color:white;
     color: #585858;
 }
@@ -1744,7 +1744,7 @@ section .home .bg {
 /*좌우버튼*/
 .portfolio .right-box .content .my-2 > .owl-carousel > .owl-nav > div[class*="owl-"] {
     color:gray;
-    font-size: 3rem;
+    -ms-font-size: 3rem;
     margin: 0;
     padding: 0;
     position:absolute;
@@ -1812,14 +1812,14 @@ section .home .bg {
 .part-4 > .head-1 > ul > li > a{
     display:block;
     padding:20px;
-    font-size:18px;
+    -ms-font-size:18px;
     font-weight:500;
 }
 
 .part-4 > .head-1 > ul > li.active > a{
     color:#1f4af8;
     font-weight:600;
-    font-size:20px;
+    -ms-font-size:20px;
   
 }
 
@@ -1914,7 +1914,7 @@ section .home .bg {
     padding:10px;
     color:white;
     background-color:#1f4af8;
-    font-size:20px;
+    -ms-font-size:20px;
 }
 
 .list-box-1 .cell .url a:hover i{
@@ -1925,7 +1925,7 @@ section .home .bg {
 .list-box-1 .cell .prod-name {
     text-align:center;
     font-weight:bold;
-    font-size:1.1rem;
+    -ms-font-size:1.1rem;
     margin-top:10px;
 }
 
@@ -1933,7 +1933,7 @@ section .home .bg {
 
 .list-box-1 .cell .prod-title {
     margin-top:5px;
-    font-size:1.4rem;
+    -ms-font-size:1.4rem;
     text-align:center;
     font-weight:bold;
 }
@@ -1976,8 +1976,7 @@ section .home .bg {
 .list-box-1 .cell > .response > span::after {
     content:"반응형";
     color:#439de6;
-    font-size:0.8rem;
-    font-size:14px;
+    -ms-font-size:14px;
     font-weight:500;
 }
 
@@ -1992,7 +1991,7 @@ section .home .bg {
     border:2px solid #a6cae7;
     border-radius:10px;
     padding:2px 7px;
-    font-size:7px;
+    -ms-font-size:7px;
 }
 
 .list-box-1 .cell:hover > .response > span{
@@ -2626,7 +2625,7 @@ section .home .bg {
     position:absolute;
     top:50%;
     left:50%;
-    font-size:3rem;
+    -ms-font-size:3rem;
     color:rgba(0,0,0,0.4);
     transform:translateX(-70%) translateY(-50%);
 }
@@ -2661,7 +2660,7 @@ section .home .bg {
 }
 
 .popup-content .pop-title span:first-child{
-    font-size: 20px;
+    -ms-font-size: 20px;
     font-weight: 500;
     margin-left: 10px;
     margin-bottom: 15px;
@@ -2675,7 +2674,7 @@ section .home .bg {
 
 .popup-content .pop-title span > a{
     display: block;
-    font-size: 16px;
+    -ms-font-size: 16px;
     padding:10px 20px;
     background-color:#1f4af8;
     border-radius: 8px;
@@ -2691,7 +2690,7 @@ section .home .bg {
     position: absolute;
     top:75%;
     left: auto;
-    font-size: 18px;
+    -ms-font-size: 18px;
     color: #000;
     margin-top:30px;
     margin-left: 30px;
@@ -2700,14 +2699,14 @@ section .home .bg {
 .popup-content .content-2{
     position: absolute;
     top:90%;
-    font-size: 18px;
+    -ms-font-size: 18px;
     color: #000;
     margin-top:80px;
     margin-left: 30px;
 }
 
 .popup-content .content-2 .ttt{
-    font-size: 22px;
+    -ms-font-size: 22px;
     font-weight: 500;
     margin-bottom: 10px;
     position: relative;
@@ -2735,20 +2734,20 @@ section .home .bg {
     position: absolute;
     top:70%;
     left: auto;
-    font-size: 17px;
+    -ms-font-size: 17px;
 }
 
 .popdown .content-2{
     position: absolute;
     top:85%;
-    font-size: 17px;
+    -ms-font-size: 17px;
     color: #000;
     margin-top:80px;
     margin-left: 30px;
 }
 
 .popdown .content-2 .ttt{
-    font-size: 22px;
+    -ms-font-size: 22px;
     font-weight: 500;
     margin-top:15px;
     margin-bottom: 20px;
@@ -2797,7 +2796,7 @@ section .home .bg {
     position: absolute;
     top:25%;
     left: 10%;
-    font-size: 1.4rem;
+    -ms-font-size: 1.4rem;
     color:#424347;
 }
 
@@ -2833,7 +2832,7 @@ section .home .bg {
     position: absolute;
     top:35%;
     left: 10%;
-    font-size: 1.3rem;
+    -ms-font-size: 1.3rem;
     color:#818081;;
 }
 
@@ -2842,7 +2841,7 @@ section .home .bg {
     position:absolute;
     top:88%;
     left:10%;
-    font-size:1.5rem;
+    -ms-font-size:1.5rem;
     font-weight:700;
     color:#dad7d7;
 }
@@ -2887,7 +2886,7 @@ contact .right-box .content{
 .contact .right-box .call div{
     display: block;
     margin-bottom: 10px;
-    font-size: 18px;
+    -ms-font-size: 18px;
     cursor: pointer;
 
 
@@ -2899,7 +2898,7 @@ contact .right-box .content{
 
 .contact .right-box .call div i{
     padding-right: 15px;
-    font-size: 20px;
+    -ms-font-size: 20px;
 }
 
 .contact .right-box .call div:first-child i{
@@ -2911,7 +2910,7 @@ contact .right-box .content{
     top:250px;
     left:50%;
     transform: translateX(-50%);
-    font-size: 25px;
+    -ms-font-size: 25px;
     color: #818081;
     text-shadow: 2px 5px 1px rgba(0,0,0,0.1);
     text-align: center;
@@ -2921,7 +2920,7 @@ contact .right-box .content{
 .response-1{
     padding: 3px 5px;
     border-radius:10px;
-    font-size: 12px;
+    -ms-font-size: 12px;
     border:2px solid #439de6;
     color: #439de6;
     margin-left: 10px;
