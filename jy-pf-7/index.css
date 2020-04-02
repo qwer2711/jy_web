@@ -1495,7 +1495,7 @@ section .home .bg {
     position: absolute;
     top:15%;
     left: 10%;
-    font-size: 1.3rem;
+    -ms-font-size: 1.3rem;
     color: #818081;
 }
 
@@ -1504,7 +1504,7 @@ section .home .bg {
     position: absolute;
     top:25%;
     left: 10%;
-    font-size: 1.4rem;
+    -ms-font-size: 1.4rem;
     color:#424347;
 }
 
@@ -1541,7 +1541,7 @@ section .home .bg {
     position:absolute;
     top:92%;
     left:10%;
-    font-size:1.5rem;
+    -ms-font-size:1.5rem;
     font-weight:700;
     color:#dad7d7;
 }
