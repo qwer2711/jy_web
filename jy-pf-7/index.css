@@ -5,7 +5,7 @@ html {
     font-family: "Noto Sans KR", sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    -ms-text-sizw-adjust: 100%;
+    -ms-text-size-adjust: 100%;
     -wepkit-text-size-adjust: 100%;
     
 }
@@ -153,7 +153,7 @@ html, body {
 
 nav {
     position: fixed;
-    top: 95%;
+    -ms-top: 95%;
     right: 2%;
     background-color: #e23ca0;
     border-radius: 20px;
@@ -164,7 +164,7 @@ nav {
 }
 
 nav:hover {
-    top:72%;
+    -ms-top:72%;
 }
 
 nav ul span {
