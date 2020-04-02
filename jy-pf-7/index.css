@@ -5,6 +5,9 @@ html {
     font-family: "Noto Sans KR", sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    -ms-text-sizw-adjust: 100%;
+    -wepkit-text-size-adjust: 100%;
+    
 }
 
 
