@@ -196,6 +196,16 @@ function shoPopup(no) {
     $('html').addClass('no-scroll');
 }
 
+$('.popup-bg, .popup-7, .popup-7 > .head > .btn-close').click(function () {
+    $('.popup-7,.popup-bg').css('display', 'none');
+    $('html').removeClass('no-scroll');
+});
+
+$('.popup-bg, .popup-8, .popup-8 > .head > .btn-close').click(function () {
+    $('.popup-8,.popup-bg').css('display', 'none');
+    $('html').removeClass('no-scroll');
+});
+
 $('.popup-bg, .popup-9, .popup-9 > .head > .btn-close').click(function () {
     $('.popup-9,.popup-bg').css('display', 'none');
     $('html').removeClass('no-scroll');
