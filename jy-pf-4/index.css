@@ -323,28 +323,14 @@ html, body {
 
     0% {
         transform: rotate(90deg);
-        transition-timing-function: ease-in;
     }
-
-    20% {
-        transform: rotate(-90deg);
-        transition-timing-function: ease-in;
-    }
-
-    40% {
-        transform: rotate(-90deg);
-        transition-timing-function: ease-in;
-    }
-
-    60% {
-        transform: rotate(-90deg);
-        transition-timing-function: ease-in;
-    }
-
-
     100% {
-        transform: rotate(90deg);
-        transition-timing-function: ease-in;
+        transform: rotate(-90deg);
+        font-size: 25px;
+        right: -165px;
+        text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
+        color: #082e8c;
+        font-weight:750;
     }
 
 }
@@ -353,7 +339,7 @@ html, body {
 .main-box .main-pocari .text-box .pocari-text {
     position: absolute;
     top: 45%;
-    right: -155px;
+    right: -135px;
     transform: rotate(90deg);
     display: inline-block;
     color: white;
@@ -361,7 +347,7 @@ html, body {
     font-size: 20px;
     font-family: "NanumSquare", "san-serif";
     font-style: normal;
-    -webkit-animation: aniMouse 5s ease-out infinite;
+    -webkit-animation: aniMouse 5s ease-in-out infinite alternate;
 }
 
 .main-box .base-img {

@@ -68,8 +68,3 @@ $('.insta-box-1 > .my-carousel-box-1 > .owl-carousel').owlCarousel({
     onTranslated: ProdBox1__updateMenuBox1LiActive,
 });
 
-$('a').click(function() {
-    if ( $(this).attr('href') == '#' ) {
-        return false;
-    }
-});
