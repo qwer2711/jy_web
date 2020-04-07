@@ -7,6 +7,7 @@ html {
     scroll-behavior: smooth;
     -ms-text-size-adjust: 100%;
     -wepkit-text-size-adjust: 100%;
+    user-select: none;
 
 }
 
@@ -2918,7 +2919,7 @@ contact .right-box .content {
 
 .contact .right-box .call {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -2935,17 +2936,38 @@ contact .right-box .content {
 
 }
 
-.contact .right-box .call div:hover {
-    text-decoration: underline;
-}
-
 .contact .right-box .call div i {
+    padding-left: 5px;
     padding-right: 15px;
     font-size: 20px;
 }
 
 .contact .right-box .call div:first-child i {
     transform: rotate(-10deg);
+}
+
+.contact .right-box .call div a{
+    line-height: 30px;
+}
+
+.contact .right-box .call div a:hover{
+    color: red;
+}
+
+.contact .right-box .call div a > *{
+    display: inline-block;
+}
+
+.contact .right-box .call div a img{
+    vertical-align: middle;
+}
+
+.contact .right-box .call div .tistory img{
+    width: 30px;
+}
+
+.contact .right-box .call div .wiki img{
+    width: 27px;
 }
 
 .contact .right-box .thx {
