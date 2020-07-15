@@ -154,7 +154,7 @@ html, body {
 
 nav {
     position: fixed;
-    -ms-top: 95%;
+    top: 95%;
     right: 2%;
     background-color: #e23ca0;
     border-radius: 20px;
@@ -165,7 +165,7 @@ nav {
 }
 
 nav:hover {
-    -ms-top: 72%;
+    top: 72%;
 }
 
 nav ul span {
